@@ -26,4 +26,5 @@
         End Try
         Return categorias
     End Function
+    'fin de la funcion
 End Class
