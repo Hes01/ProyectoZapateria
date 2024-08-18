@@ -1,4 +1,5 @@
 ﻿Public Class Persona
+    Private Const RutaArchivo As String = "Datos\persona.txt"
     Public Property IdPersona As Integer
     Public Property Telefono As String
     Public Property Correo As String
@@ -11,7 +12,7 @@
     Public Shared Function LeerPersonas() As List(Of Persona)
         Dim personas As New List(Of Persona)
         Try
-            Dim lines() As String = System.IO.File.ReadAllLines("Datos\persona.txt")
+            Dim lines() As String = System.IO.File.ReadAllLines(RutaArchivo)
             For i As Integer = 1 To lines.Length - 1
                 Dim line As String = lines(i)
                 Dim fields() As String = line.Split("|"c)
@@ -41,4 +42,5 @@
         Dim personas As List(Of Persona) = LeerPersonas()
         Return personas.FirstOrDefault(Function(p) p.IdPersona = idPersona)
     End Function
+
 End Class

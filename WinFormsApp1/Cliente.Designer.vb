@@ -43,7 +43,7 @@ Partial Class Cliente
         ' 
         dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvClientes.Columns.AddRange(New DataGridViewColumn() {id, telefono, email, direccion, nombre_rzSocial, dni_ruc, estado})
-        dgvClientes.Location = New Point(36, 90)
+        dgvClientes.Location = New Point(36, 106)
         dgvClientes.Name = "dgvClientes"
         dgvClientes.Size = New Size(752, 221)
         dgvClientes.TabIndex = 24
@@ -85,7 +85,7 @@ Partial Class Cliente
         ' 
         ' btnBuscar
         ' 
-        btnBuscar.Location = New Point(356, 3)
+        btnBuscar.Location = New Point(355, 3)
         btnBuscar.Name = "btnBuscar"
         btnBuscar.Size = New Size(53, 32)
         btnBuscar.TabIndex = 23
