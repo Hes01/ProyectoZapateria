@@ -5,15 +5,15 @@
     Public Property Nombre As String
     Public Property Apellido As String
     Public Property Dni As String
-    Public Property Estado As Boolean
+    Public Overloads Property Estado As Boolean
 
     ' Método para leer personas naturales desde el archivo
     Public Shared Function LeerPersonasNaturales() As List(Of PersonaNatural)
         Dim personasNaturales As New List(Of PersonaNatural)
         Try
-            Dim lines() As String = System.IO.File.ReadAllLines("Datos\persona_natural.txt")
+            Dim lines() As String = System.IO.File.ReadAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt") 'Datos\persona_natural.txt
             For i As Integer = 1 To lines.Length - 1
-                Dim line As String = lines(i)
+                Dim line As String = lines(i) 'C:\Users\IK\Desktop\avance paul\proyecto MA
                 Dim fields() As String = line.Split("|"c)
                 Dim personaNatural As New PersonaNatural() With {
                     .IdPersonaNatural = Integer.Parse(fields(0)),
