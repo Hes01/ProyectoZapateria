@@ -23,13 +23,6 @@ Partial Class Cliente
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         dgvClientes = New DataGridView()
-        id = New DataGridViewTextBoxColumn()
-        telefono = New DataGridViewTextBoxColumn()
-        email = New DataGridViewTextBoxColumn()
-        direccion = New DataGridViewTextBoxColumn()
-        nombre_rzSocial = New DataGridViewTextBoxColumn()
-        dni_ruc = New DataGridViewTextBoxColumn()
-        estado = New DataGridViewTextBoxColumn()
         btnBuscar = New Button()
         txtBuscar = New TextBox()
         btnEliminarCliente = New Button()
@@ -42,46 +35,10 @@ Partial Class Cliente
         ' dgvClientes
         ' 
         dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvClientes.Columns.AddRange(New DataGridViewColumn() {id, telefono, email, direccion, nombre_rzSocial, dni_ruc, estado})
         dgvClientes.Location = New Point(36, 106)
         dgvClientes.Name = "dgvClientes"
-        dgvClientes.Size = New Size(752, 221)
+        dgvClientes.Size = New Size(814, 221)
         dgvClientes.TabIndex = 24
-        ' 
-        ' id
-        ' 
-        id.HeaderText = "ID"
-        id.Name = "id"
-        ' 
-        ' telefono
-        ' 
-        telefono.HeaderText = "TELEFONO"
-        telefono.Name = "telefono"
-        ' 
-        ' email
-        ' 
-        email.HeaderText = "EMAIL"
-        email.Name = "email"
-        ' 
-        ' direccion
-        ' 
-        direccion.HeaderText = "DIRECCION"
-        direccion.Name = "direccion"
-        ' 
-        ' nombre_rzSocial
-        ' 
-        nombre_rzSocial.HeaderText = "NOMBRE/RAZON SOCIAL"
-        nombre_rzSocial.Name = "nombre_rzSocial"
-        ' 
-        ' dni_ruc
-        ' 
-        dni_ruc.HeaderText = "DNI/RUC"
-        dni_ruc.Name = "dni_ruc"
-        ' 
-        ' estado
-        ' 
-        estado.HeaderText = "ESTADO"
-        estado.Name = "estado"
         ' 
         ' btnBuscar
         ' 
@@ -139,7 +96,7 @@ Partial Class Cliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 479)
+        ClientSize = New Size(882, 479)
         Controls.Add(btnSalirCliente)
         Controls.Add(dgvClientes)
         Controls.Add(btnBuscar)
@@ -161,11 +118,4 @@ Partial Class Cliente
     Friend WithEvents btnModificarCliente As Button
     Friend WithEvents btnAgregarCliente As Button
     Friend WithEvents btnSalirCliente As Button
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents telefono As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents direccion As DataGridViewTextBoxColumn
-    Friend WithEvents nombre_rzSocial As DataGridViewTextBoxColumn
-    Friend WithEvents dni_ruc As DataGridViewTextBoxColumn
-    Friend WithEvents estado As DataGridViewTextBoxColumn
 End Class

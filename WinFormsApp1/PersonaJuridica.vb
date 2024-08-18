@@ -3,13 +3,13 @@
 
     Public Property IdPersonaJuridica As Integer
     Public Property RazonSocial As String
-    Public Property Estado As Boolean
+    Public Overloads Property Estado As Boolean
 
     ' Método para leer personas jurídicas desde el archivo
     Public Shared Function LeerPersonasJuridicas() As List(Of PersonaJuridica)
         Dim personasJuridicas As New List(Of PersonaJuridica)
         Try
-            Dim lines() As String = System.IO.File.ReadAllLines("Datos\persona_juridica.txt")
+            Dim lines() As String = System.IO.File.ReadAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaJuridica.txt")
             For i As Integer = 1 To lines.Length - 1
                 Dim line As String = lines(i)
                 Dim fields() As String = line.Split("|"c)
