@@ -41,4 +41,5 @@
         Dim personasNaturales As List(Of PersonaNatural) = LeerPersonasNaturales()
         Return personasNaturales.FirstOrDefault(Function(p) p.Dni = dni)
     End Function
+
 End Class
