@@ -1,3 +1,5 @@
-﻿Public Class Form1
+﻿Public Class Compra
+    Private Sub Compra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class
