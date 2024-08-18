@@ -1,0 +1,3 @@
+IdPersonaJuridica|RazonSocial|IdPersona|Estado
+1|Empresa S.A.|2|True
+2|Comercial XYZ|4|True
