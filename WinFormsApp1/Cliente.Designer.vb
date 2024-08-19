@@ -25,10 +25,10 @@ Partial Class Cliente
         dgvClientes = New DataGridView()
         btnBuscar = New Button()
         txtBuscar = New TextBox()
-        btnEliminarCliente = New Button()
-        btnModificarCliente = New Button()
-        btnAgregarCliente = New Button()
-        btnSalirCliente = New Button()
+        btnEliminar = New Button()
+        btnModificar = New Button()
+        btnAgregar = New Button()
+        btnSalir = New Button()
         CType(dgvClientes, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -56,54 +56,54 @@ Partial Class Cliente
         txtBuscar.Size = New Size(302, 23)
         txtBuscar.TabIndex = 22
         ' 
-        ' btnEliminarCliente
+        ' btnEliminar
         ' 
-        btnEliminarCliente.Location = New Point(230, 411)
-        btnEliminarCliente.Name = "btnEliminarCliente"
-        btnEliminarCliente.Size = New Size(75, 44)
-        btnEliminarCliente.TabIndex = 21
-        btnEliminarCliente.Text = "Eliminar"
-        btnEliminarCliente.UseVisualStyleBackColor = True
+        btnEliminar.Location = New Point(230, 411)
+        btnEliminar.Name = "btnEliminar"
+        btnEliminar.Size = New Size(75, 44)
+        btnEliminar.TabIndex = 21
+        btnEliminar.Text = "Eliminar"
+        btnEliminar.UseVisualStyleBackColor = True
         ' 
-        ' btnModificarCliente
+        ' btnModificar
         ' 
-        btnModificarCliente.Location = New Point(124, 411)
-        btnModificarCliente.Name = "btnModificarCliente"
-        btnModificarCliente.Size = New Size(75, 44)
-        btnModificarCliente.TabIndex = 20
-        btnModificarCliente.Text = "Modificar"
-        btnModificarCliente.UseVisualStyleBackColor = True
+        btnModificar.Location = New Point(124, 411)
+        btnModificar.Name = "btnModificar"
+        btnModificar.Size = New Size(75, 44)
+        btnModificar.TabIndex = 20
+        btnModificar.Text = "Modificar"
+        btnModificar.UseVisualStyleBackColor = True
         ' 
-        ' btnAgregarCliente
+        ' btnAgregar
         ' 
-        btnAgregarCliente.Location = New Point(14, 411)
-        btnAgregarCliente.Name = "btnAgregarCliente"
-        btnAgregarCliente.Size = New Size(75, 44)
-        btnAgregarCliente.TabIndex = 19
-        btnAgregarCliente.Text = "Agregar"
-        btnAgregarCliente.UseVisualStyleBackColor = True
+        btnAgregar.Location = New Point(14, 411)
+        btnAgregar.Name = "btnAgregar"
+        btnAgregar.Size = New Size(75, 44)
+        btnAgregar.TabIndex = 19
+        btnAgregar.Text = "Agregar"
+        btnAgregar.UseVisualStyleBackColor = True
         ' 
-        ' btnSalirCliente
+        ' btnSalir
         ' 
-        btnSalirCliente.Location = New Point(713, 411)
-        btnSalirCliente.Name = "btnSalirCliente"
-        btnSalirCliente.Size = New Size(75, 44)
-        btnSalirCliente.TabIndex = 25
-        btnSalirCliente.Text = "Salir"
-        btnSalirCliente.UseVisualStyleBackColor = True
+        btnSalir.Location = New Point(713, 411)
+        btnSalir.Name = "btnSalir"
+        btnSalir.Size = New Size(75, 44)
+        btnSalir.TabIndex = 25
+        btnSalir.Text = "Salir"
+        btnSalir.UseVisualStyleBackColor = True
         ' 
         ' Cliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(882, 479)
-        Controls.Add(btnSalirCliente)
+        Controls.Add(btnSalir)
         Controls.Add(dgvClientes)
         Controls.Add(btnBuscar)
         Controls.Add(txtBuscar)
-        Controls.Add(btnEliminarCliente)
-        Controls.Add(btnModificarCliente)
-        Controls.Add(btnAgregarCliente)
+        Controls.Add(btnEliminar)
+        Controls.Add(btnModificar)
+        Controls.Add(btnAgregar)
         Name = "Cliente"
         Text = "Cliente"
         CType(dgvClientes, ComponentModel.ISupportInitialize).EndInit()
@@ -114,8 +114,8 @@ Partial Class Cliente
     Friend WithEvents dgvClientes As DataGridView
     Friend WithEvents btnBuscar As Button
     Friend WithEvents txtBuscar As TextBox
-    Friend WithEvents btnEliminarCliente As Button
-    Friend WithEvents btnModificarCliente As Button
-    Friend WithEvents btnAgregarCliente As Button
-    Friend WithEvents btnSalirCliente As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents btnSalir As Button
 End Class

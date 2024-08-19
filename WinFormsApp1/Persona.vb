@@ -43,4 +43,41 @@
         Return personas.FirstOrDefault(Function(p) p.IdPersona = idPersona)
     End Function
 
+    ''''''''''''''''>>>>>>>>>>>>>
+
+    Public Shared Sub ModificarPersona(personaModificada As Persona)
+        Dim personas As List(Of Persona) = LeerPersonas()
+
+        ' Encuentra el índice de la persona a modificar
+        Dim indice As Integer = personas.FindIndex(Function(p) p.IdPersona = personaModificada.IdPersona)
+
+        If indice <> -1 Then
+            ' Actualiza los datos de la persona en la lista
+            personas(indice) = personaModificada
+
+            ' Guarda los cambios en el archivo
+            GuardarPersonas(personas)
+        Else
+            MessageBox.Show("La persona no fue encontrada para modificar.")
+        End If
+    End Sub
+
+    Private Shared Sub GuardarPersonas(personas As List(Of Persona))
+        Try
+            ' Escribe los encabezados y luego las personas en el archivo
+            Dim lines As New List(Of String)
+            lines.Add("IdPersona|Telefono|Correo|Direccion|Ruc|TipoPersona|Estado")
+            For Each persona As Persona In personas
+                lines.Add($"{persona.IdPersona}|{persona.Telefono}|{persona.Correo}|{persona.Direccion}|{persona.Ruc}|{persona.TipoPersona}|{persona.Estado}")
+            Next
+            System.IO.File.WriteAllLines(RutaArchivo, lines)
+        Catch ex As Exception
+            MessageBox.Show($"Error al guardar las personas: {ex.Message}")
+        End Try
+    End Sub
+
+
+
+
+
 End Class

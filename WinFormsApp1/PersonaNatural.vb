@@ -42,4 +42,38 @@
         Return personasNaturales.FirstOrDefault(Function(p) p.Dni = dni)
     End Function
 
+    '''<<<<<<<<<<<<<<<<<<<<<<<
+    Public Shared Sub ModificarPersonaNatural(personaNaturalModificada As PersonaNatural)
+        Dim personasNaturales As List(Of PersonaNatural) = LeerPersonasNaturales()
+
+        ' Encuentra el índice de la persona natural a modificar
+        Dim indice As Integer = personasNaturales.FindIndex(Function(p) p.IdPersonaNatural = personaNaturalModificada.IdPersonaNatural)
+
+        If indice <> -1 Then
+            ' Actualiza los datos de la persona natural en la lista
+            personasNaturales(indice) = personaNaturalModificada
+
+            ' Guarda los cambios en el archivo
+            GuardarPersonasNaturales(personasNaturales)
+        Else
+            MessageBox.Show("La persona natural no fue encontrada para modificar.")
+        End If
+    End Sub
+
+    Private Shared Sub GuardarPersonasNaturales(personasNaturales As List(Of PersonaNatural))
+        Try
+            ' Escribe los encabezados y luego las personas naturales en el archivo
+            Dim lines As New List(Of String)
+            lines.Add("IdPersonaNatural|Nombre|Apellido|Dni|IdPersona|Estado")
+            For Each personaNatural As PersonaNatural In personasNaturales
+                lines.Add($"{personaNatural.IdPersonaNatural}|{personaNatural.Nombre}|{personaNatural.Apellido}|{personaNatural.Dni}|{personaNatural.IdPersona}|{personaNatural.Estado}")
+            Next
+            System.IO.File.WriteAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt", lines)
+        Catch ex As Exception
+            MessageBox.Show($"Error al guardar las personas naturales: {ex.Message}")
+        End Try
+    End Sub
+
+
+
 End Class
