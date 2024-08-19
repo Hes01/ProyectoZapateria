@@ -31,4 +31,8 @@
     Private Sub Home_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnCompra_Click(sender As Object, e As EventArgs) Handles btnCompra.Click
+        Compra.Show()
+    End Sub
 End Class

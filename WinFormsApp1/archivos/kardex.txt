@@ -1,0 +1,1 @@
+﻿idKardex|fechaReg|fechaMod|fechaOrden|tipoOperacion|cantidad|idProducto|tipoDocumento|saldo|estado|idComprobante

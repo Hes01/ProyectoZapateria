@@ -1,0 +1,1 @@
+﻿idComprobante|fecha|total|tipoPago|idPersona|estado
