@@ -1,3 +1,3 @@
 IdPersona|Telefono|Correo|Direccion|Ruc|TipoPersona|Estado
-1|555-1234|persona1@correo.com|Calle Falsa 123|12345678912|Natural|True
-2|555-5678|persona2@correo.com|Av. Siempre Viva 742|87654321098|Juridica|True
+1|966290548|piura@gmail.com|tallanes|142563|Cliente|True
+2|555-5678|persona2@correo.com|Av. Siempre Viva 742|87654321098|Juridica|False

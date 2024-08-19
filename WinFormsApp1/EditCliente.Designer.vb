@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AddCliente
+Partial Class EditCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -30,10 +30,8 @@ Partial Class AddCliente
         lblNombres = New Label()
         lblRazonSocial = New Label()
         txtRazonSocial = New TextBox()
-        btnRegistrar = New Button()
+        btnGuardar = New Button()
         Label5 = New Label()
-        Label4 = New Label()
-        cmbTipo = New ComboBox()
         txtEmail = New TextBox()
         Correo = New Label()
         txtDirección = New TextBox()
@@ -49,200 +47,181 @@ Partial Class AddCliente
         ' 
         ' txtDni
         ' 
-        txtDni.Location = New Point(321, 268)
+        txtDni.Location = New Point(313, 265)
         txtDni.Name = "txtDni"
         txtDni.Size = New Size(113, 23)
-        txtDni.TabIndex = 55
+        txtDni.TabIndex = 77
         ' 
         ' lblDni
         ' 
         lblDni.AutoSize = True
-        lblDni.Location = New Point(290, 269)
+        lblDni.Location = New Point(282, 266)
         lblDni.Name = "lblDni"
         lblDni.Size = New Size(25, 15)
-        lblDni.TabIndex = 54
+        lblDni.TabIndex = 76
         lblDni.Text = "Dni"
         ' 
         ' txtApellidos
         ' 
-        txtApellidos.Location = New Point(321, 215)
+        txtApellidos.Location = New Point(313, 212)
         txtApellidos.Name = "txtApellidos"
         txtApellidos.Size = New Size(113, 23)
-        txtApellidos.TabIndex = 53
+        txtApellidos.TabIndex = 75
         ' 
         ' lblApellidos
         ' 
         lblApellidos.AutoSize = True
-        lblApellidos.Location = New Point(259, 215)
+        lblApellidos.Location = New Point(251, 212)
         lblApellidos.Name = "lblApellidos"
         lblApellidos.Size = New Size(56, 15)
-        lblApellidos.TabIndex = 52
+        lblApellidos.TabIndex = 74
         lblApellidos.Text = "Apellidos"
         ' 
         ' txtNombres
         ' 
-        txtNombres.Location = New Point(321, 162)
+        txtNombres.Location = New Point(313, 159)
         txtNombres.Name = "txtNombres"
         txtNombres.Size = New Size(113, 23)
-        txtNombres.TabIndex = 51
+        txtNombres.TabIndex = 73
         ' 
         ' lblNombres
         ' 
         lblNombres.AutoSize = True
-        lblNombres.Location = New Point(259, 165)
+        lblNombres.Location = New Point(251, 162)
         lblNombres.Name = "lblNombres"
         lblNombres.Size = New Size(56, 15)
-        lblNombres.TabIndex = 50
+        lblNombres.TabIndex = 72
         lblNombres.Text = "Nombres"
         ' 
         ' lblRazonSocial
         ' 
         lblRazonSocial.AutoSize = True
-        lblRazonSocial.Location = New Point(242, 114)
+        lblRazonSocial.Location = New Point(234, 111)
         lblRazonSocial.Name = "lblRazonSocial"
         lblRazonSocial.Size = New Size(73, 15)
-        lblRazonSocial.TabIndex = 49
+        lblRazonSocial.TabIndex = 71
         lblRazonSocial.Text = "Razon Social"
         ' 
         ' txtRazonSocial
         ' 
-        txtRazonSocial.Location = New Point(321, 109)
+        txtRazonSocial.Location = New Point(313, 106)
         txtRazonSocial.Name = "txtRazonSocial"
         txtRazonSocial.Size = New Size(113, 23)
-        txtRazonSocial.TabIndex = 48
+        txtRazonSocial.TabIndex = 70
         ' 
-        ' btnRegistrar
+        ' btnGuardar
         ' 
-        btnRegistrar.Location = New Point(91, 411)
-        btnRegistrar.Name = "btnRegistrar"
-        btnRegistrar.Size = New Size(75, 23)
-        btnRegistrar.TabIndex = 47
-        btnRegistrar.Text = "Registrar"
-        btnRegistrar.UseVisualStyleBackColor = True
+        btnGuardar.Location = New Point(105, 391)
+        btnGuardar.Name = "btnGuardar"
+        btnGuardar.Size = New Size(75, 23)
+        btnGuardar.TabIndex = 69
+        btnGuardar.Text = "Guardar"
+        btnGuardar.UseVisualStyleBackColor = True
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Sitka Banner", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point)
-        Label5.Location = New Point(40, 30)
+        Label5.Location = New Point(32, 27)
         Label5.Name = "Label5"
-        Label5.Size = New Size(150, 29)
-        Label5.TabIndex = 46
-        Label5.Text = "Datos del Cliente"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(34, 374)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(30, 15)
-        Label4.TabIndex = 45
-        Label4.Text = "Tipo"
-        ' 
-        ' cmbTipo
-        ' 
-        cmbTipo.AutoCompleteCustomSource.AddRange(New String() {"Natural", "Juridica"})
-        cmbTipo.FormattingEnabled = True
-        cmbTipo.Items.AddRange(New Object() {"Natural", "Juridica"})
-        cmbTipo.Location = New Point(91, 366)
-        cmbTipo.Name = "cmbTipo"
-        cmbTipo.Size = New Size(113, 23)
-        cmbTipo.TabIndex = 44
+        Label5.Size = New Size(207, 29)
+        Label5.TabIndex = 68
+        Label5.Text = "Editar Datos del Cliente"
         ' 
         ' txtEmail
         ' 
-        txtEmail.Location = New Point(91, 322)
+        txtEmail.Location = New Point(83, 319)
         txtEmail.Name = "txtEmail"
         txtEmail.Size = New Size(113, 23)
-        txtEmail.TabIndex = 43
+        txtEmail.TabIndex = 65
         ' 
         ' Correo
         ' 
         Correo.AutoSize = True
-        Correo.Location = New Point(33, 325)
+        Correo.Location = New Point(25, 322)
         Correo.Name = "Correo"
         Correo.Size = New Size(36, 15)
-        Correo.TabIndex = 42
+        Correo.TabIndex = 64
         Correo.Text = "Email"
         ' 
         ' txtDirección
         ' 
-        txtDirección.Location = New Point(91, 269)
+        txtDirección.Location = New Point(83, 266)
         txtDirección.Name = "txtDirección"
         txtDirección.Size = New Size(113, 23)
-        txtDirección.TabIndex = 41
+        txtDirección.TabIndex = 63
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 269)
+        Label3.Location = New Point(4, 266)
         Label3.Name = "Label3"
         Label3.Size = New Size(57, 15)
-        Label3.TabIndex = 40
+        Label3.TabIndex = 62
         Label3.Text = "Dirección"
         ' 
         ' txtTelefono
         ' 
-        txtTelefono.Location = New Point(91, 216)
+        txtTelefono.Location = New Point(83, 213)
         txtTelefono.Name = "txtTelefono"
         txtTelefono.Size = New Size(113, 23)
-        txtTelefono.TabIndex = 39
+        txtTelefono.TabIndex = 61
         ' 
         ' Telefono
         ' 
         Telefono.AutoSize = True
-        Telefono.Location = New Point(18, 224)
+        Telefono.Location = New Point(10, 221)
         Telefono.Name = "Telefono"
         Telefono.Size = New Size(52, 15)
-        Telefono.TabIndex = 38
+        Telefono.TabIndex = 60
         Telefono.Text = "Telefono"
         ' 
         ' txtRuc
         ' 
-        txtRuc.Location = New Point(91, 159)
+        txtRuc.Location = New Point(83, 156)
         txtRuc.Name = "txtRuc"
         txtRuc.Size = New Size(113, 23)
-        txtRuc.TabIndex = 37
+        txtRuc.TabIndex = 59
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(40, 162)
+        Label2.Location = New Point(32, 159)
         Label2.Name = "Label2"
         Label2.Size = New Size(24, 15)
-        Label2.TabIndex = 36
+        Label2.TabIndex = 58
         Label2.Text = "ruc"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(51, 122)
+        Label1.Location = New Point(43, 119)
         Label1.Name = "Label1"
         Label1.Size = New Size(18, 15)
-        Label1.TabIndex = 35
+        Label1.TabIndex = 57
         Label1.Text = "ID"
         ' 
         ' txtID
         ' 
-        txtID.Location = New Point(91, 114)
+        txtID.Location = New Point(83, 111)
         txtID.Name = "txtID"
         txtID.Size = New Size(37, 23)
-        txtID.TabIndex = 34
+        txtID.TabIndex = 56
         ' 
         ' btnCancelar
         ' 
-        btnCancelar.Location = New Point(216, 411)
+        btnCancelar.Location = New Point(232, 391)
         btnCancelar.Name = "btnCancelar"
         btnCancelar.Size = New Size(75, 23)
-        btnCancelar.TabIndex = 56
+        btnCancelar.TabIndex = 78
         btnCancelar.Text = "Cancelar"
         btnCancelar.UseVisualStyleBackColor = True
         ' 
-        ' AddCliente
+        ' EditCliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(454, 450)
+        ClientSize = New Size(459, 450)
         Controls.Add(btnCancelar)
         Controls.Add(txtDni)
         Controls.Add(lblDni)
@@ -252,10 +231,8 @@ Partial Class AddCliente
         Controls.Add(lblNombres)
         Controls.Add(lblRazonSocial)
         Controls.Add(txtRazonSocial)
-        Controls.Add(btnRegistrar)
+        Controls.Add(btnGuardar)
         Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(cmbTipo)
         Controls.Add(txtEmail)
         Controls.Add(Correo)
         Controls.Add(txtDirección)
@@ -266,8 +243,8 @@ Partial Class AddCliente
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtID)
-        Name = "AddCliente"
-        Text = "AddCliente"
+        Name = "EditCliente"
+        Text = "EditCliente"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -280,10 +257,8 @@ Partial Class AddCliente
     Friend WithEvents lblNombres As Label
     Friend WithEvents lblRazonSocial As Label
     Friend WithEvents txtRazonSocial As TextBox
-    Friend WithEvents btnRegistrar As Button
+    Friend WithEvents btnGuardar As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents cmbTipo As ComboBox
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Correo As Label
     Friend WithEvents txtDirección As TextBox
