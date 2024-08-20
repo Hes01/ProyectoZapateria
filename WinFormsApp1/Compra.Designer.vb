@@ -54,7 +54,6 @@ Partial Class Compra
         rbtn_boleta = New RadioButton()
         Label8 = New Label()
         txt_idProveedor = New TextBox()
-        Button1 = New Button()
         CType(tablaCompra, ComponentModel.ISupportInitialize).BeginInit()
         group_comprobante.SuspendLayout()
         SuspendLayout()
@@ -325,21 +324,11 @@ Partial Class Compra
         txt_idProveedor.Size = New Size(125, 27)
         txt_idProveedor.TabIndex = 25
         ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(692, 94)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(225, 108)
-        Button1.TabIndex = 26
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' Compra
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1071, 861)
-        Controls.Add(Button1)
         Controls.Add(txt_idProveedor)
         Controls.Add(Label8)
         Controls.Add(group_comprobante)
@@ -405,5 +394,4 @@ Partial Class Compra
     Friend WithEvents rbtn_factura As RadioButton
     Friend WithEvents Label8 As Label
     Friend WithEvents txt_idProveedor As TextBox
-    Friend WithEvents Button1 As Button
 End Class
