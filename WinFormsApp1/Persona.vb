@@ -1,5 +1,5 @@
 ﻿Public Class Persona
-    Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\persona.txt"
+    Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\persona.txt"
     Public Property IdPersona As Integer
     Public Property Telefono As String
     Public Property Correo As String
