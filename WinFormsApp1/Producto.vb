@@ -10,7 +10,7 @@
     Public Property Estado As Boolean
 
     ' Ruta del archivo de productos relativa al directorio base de la aplicación
-    Private Shared ReadOnly RutaArchivo As String = "Datos\producto.txt"
+    Public Shared ReadOnly RutaArchivo As String = "Datos\producto.txt"
 
     ' Método para leer productos desde el archivo
     Public Shared Function LeerProductos() As List(Of Producto)
