@@ -1,3 +1,7 @@
 IdPersona|Telefono|Correo|Direccion|Ruc|TipoPersona|Estado
-1|966290548|piura@gmail.com|tallanes|142563|Cliente|True
-2|555-5678|persona2@correo.com|Av. Siempre Viva 742|87654321098|Juridica|False
+1|966290548|@email|piura|1234567|Cliente|True
+2|966290548|jose@gmail.com|sao paolo|22222222|Cliente|True
+3|963258741|luja@gmail.com|lima|66666666|Proveedor|True
+4|917295683|lucas@gmail.com|sullana|7458965|Proveedor|True
+5|145236987|argenti@gmail.com|argentina|12345645|Proveedor|True
+6|963258741|ualkj@liim.com|junin|123456789|Proveedor|False

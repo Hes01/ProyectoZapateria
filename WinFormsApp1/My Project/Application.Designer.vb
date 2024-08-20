@@ -33,7 +33,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.WinFormsApp1.AddCliente
+            Me.MainForm = Global.WinFormsApp1.Proveedor
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
