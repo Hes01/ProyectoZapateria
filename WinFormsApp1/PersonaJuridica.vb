@@ -4,7 +4,9 @@
     Public Property IdPersonaJuridica As Integer
     Public Property RazonSocial As String
     Public Overloads Property Estado As Boolean
+
     Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaJuridica.txt"
+
     ' Método para leer personas jurídicas desde el archivo
     Public Shared Function LeerPersonasJuridicas() As List(Of PersonaJuridica)
         Dim personasJuridicas As New List(Of PersonaJuridica)

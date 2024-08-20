@@ -6,7 +6,9 @@
     Public Property Apellido As String
     Public Property Dni As String
     Public Overloads Property Estado As Boolean
+            
     Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt"
+
     ' Método para leer personas naturales desde el archivo
     Public Shared Function LeerPersonasNaturales() As List(Of PersonaNatural)
         Dim personasNaturales As New List(Of PersonaNatural)

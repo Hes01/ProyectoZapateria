@@ -23,13 +23,13 @@ Partial Class Venta
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtCodigoProducto = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.rbtnBoleta = New System.Windows.Forms.RadioButton()
+        Me.rbtnFactura = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblNombre = New System.Windows.Forms.TextBox()
         Me.lblMarca = New System.Windows.Forms.TextBox()
         Me.lblTalla = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtSubtotal = New System.Windows.Forms.TextBox()
         Me.lblPrecio = New System.Windows.Forms.TextBox()
         Me.lblStockActual = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,15 +40,10 @@ Partial Class Venta
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Código = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.dgvVenta = New System.Windows.Forms.DataGridView()
         Me.PanelBoleta = New System.Windows.Forms.Panel()
+        Me.lblIdPersona = New System.Windows.Forms.Label()
+        Me.lblRuc = New System.Windows.Forms.Label()
         Me.lblApellido = New System.Windows.Forms.Label()
         Me.lblCorreo = New System.Windows.Forms.Label()
         Me.lblRazonSocial = New System.Windows.Forms.Label()
@@ -60,22 +55,29 @@ Partial Class Venta
         Me.txtDocumento = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.lblRuc = New System.Windows.Forms.Label()
+        Me.cmbTipoPago = New System.Windows.Forms.ComboBox()
+        Me.lblIdVendedor = New System.Windows.Forms.Label()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Código = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.lblIdProducto = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelBoleta.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtCodigoProducto
@@ -86,34 +88,34 @@ Partial Class Venta
         Me.txtCodigoProducto.Size = New System.Drawing.Size(114, 27)
         Me.txtCodigoProducto.TabIndex = 0
         '
-        'RadioButton1
+        'rbtnBoleta
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(24, 48)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(82, 24)
-        Me.RadioButton1.TabIndex = 1
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "BOLETA"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbtnBoleta.AutoSize = True
+        Me.rbtnBoleta.Location = New System.Drawing.Point(24, 48)
+        Me.rbtnBoleta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rbtnBoleta.Name = "rbtnBoleta"
+        Me.rbtnBoleta.Size = New System.Drawing.Size(82, 24)
+        Me.rbtnBoleta.TabIndex = 1
+        Me.rbtnBoleta.TabStop = True
+        Me.rbtnBoleta.Text = "BOLETA"
+        Me.rbtnBoleta.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbtnFactura
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(24, 81)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(92, 24)
-        Me.RadioButton2.TabIndex = 2
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "FACTURA"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbtnFactura.AutoSize = True
+        Me.rbtnFactura.Location = New System.Drawing.Point(24, 81)
+        Me.rbtnFactura.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rbtnFactura.Name = "rbtnFactura"
+        Me.rbtnFactura.Size = New System.Drawing.Size(92, 24)
+        Me.rbtnFactura.TabIndex = 2
+        Me.rbtnFactura.TabStop = True
+        Me.rbtnFactura.Text = "FACTURA"
+        Me.rbtnFactura.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
+        Me.GroupBox1.Controls.Add(Me.rbtnBoleta)
+        Me.GroupBox1.Controls.Add(Me.rbtnFactura)
         Me.GroupBox1.Location = New System.Drawing.Point(87, 45)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
@@ -147,13 +149,13 @@ Partial Class Venta
         Me.lblTalla.Size = New System.Drawing.Size(114, 27)
         Me.lblTalla.TabIndex = 6
         '
-        'TextBox5
+        'txtSubtotal
         '
-        Me.TextBox5.Location = New System.Drawing.Point(624, 375)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(114, 27)
-        Me.TextBox5.TabIndex = 10
+        Me.txtSubtotal.Location = New System.Drawing.Point(624, 375)
+        Me.txtSubtotal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.Size = New System.Drawing.Size(114, 27)
+        Me.txtSubtotal.TabIndex = 10
         '
         'lblPrecio
         '
@@ -243,69 +245,21 @@ Partial Class Venta
         Me.Label8.TabIndex = 18
         Me.Label8.Text = "Subtotal"
         '
-        'DataGridView1
+        'dgvVenta
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Código, Me.Marca, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        Me.DataGridView1.Location = New System.Drawing.Point(72, 536)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(851, 311)
-        Me.DataGridView1.TabIndex = 19
-        '
-        'Código
-        '
-        Me.Código.HeaderText = "Codigo"
-        Me.Código.MinimumWidth = 6
-        Me.Código.Name = "Código"
-        Me.Código.Width = 125
-        '
-        'Marca
-        '
-        Me.Marca.HeaderText = "Marca"
-        Me.Marca.MinimumWidth = 6
-        Me.Marca.Name = "Marca"
-        Me.Marca.Width = 125
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Modelo"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 125
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Talla"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 125
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Cantidad"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 125
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Precio Unitario"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 125
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Subtotal"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.Width = 125
+        Me.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column6, Me.Código, Me.Marca, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        Me.dgvVenta.Location = New System.Drawing.Point(42, 536)
+        Me.dgvVenta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.RowHeadersWidth = 51
+        Me.dgvVenta.Size = New System.Drawing.Size(1039, 311)
+        Me.dgvVenta.TabIndex = 19
         '
         'PanelBoleta
         '
         Me.PanelBoleta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PanelBoleta.Controls.Add(Me.lblIdPersona)
         Me.PanelBoleta.Controls.Add(Me.lblRuc)
         Me.PanelBoleta.Controls.Add(Me.lblApellido)
         Me.PanelBoleta.Controls.Add(Me.lblCorreo)
@@ -320,8 +274,26 @@ Partial Class Venta
         Me.PanelBoleta.Location = New System.Drawing.Point(838, 136)
         Me.PanelBoleta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.PanelBoleta.Name = "PanelBoleta"
-        Me.PanelBoleta.Size = New System.Drawing.Size(260, 287)
+        Me.PanelBoleta.Size = New System.Drawing.Size(260, 317)
         Me.PanelBoleta.TabIndex = 20
+        '
+        'lblIdPersona
+        '
+        Me.lblIdPersona.AutoSize = True
+        Me.lblIdPersona.Location = New System.Drawing.Point(21, 284)
+        Me.lblIdPersona.Name = "lblIdPersona"
+        Me.lblIdPersona.Size = New System.Drawing.Size(61, 20)
+        Me.lblIdPersona.TabIndex = 14
+        Me.lblIdPersona.Text = "Label10"
+        '
+        'lblRuc
+        '
+        Me.lblRuc.AutoSize = True
+        Me.lblRuc.Location = New System.Drawing.Point(23, 260)
+        Me.lblRuc.Name = "lblRuc"
+        Me.lblRuc.Size = New System.Drawing.Size(40, 20)
+        Me.lblRuc.TabIndex = 13
+        Me.lblRuc.Text = "RUC:"
         '
         'lblApellido
         '
@@ -423,88 +395,62 @@ Partial Class Venta
         Me.Label13.TabIndex = 21
         Me.Label13.Text = "Datos de Cliente"
         '
-        'Button2
+        'btnAgregar
         '
-        Me.Button2.Location = New System.Drawing.Point(399, 481)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 31)
-        Me.Button2.TabIndex = 22
-        Me.Button2.Text = "Agregar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnAgregar.Location = New System.Drawing.Point(399, 481)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(86, 31)
+        Me.btnAgregar.TabIndex = 22
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
         '
-        'NumericUpDown1
+        'txtCantidad
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(237, 375)
-        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(137, 27)
-        Me.NumericUpDown1.TabIndex = 23
+        Me.txtCantidad.Location = New System.Drawing.Point(237, 375)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(137, 27)
+        Me.txtCantidad.TabIndex = 23
         '
-        'TextBox7
+        'txtTotal
         '
-        Me.TextBox7.Location = New System.Drawing.Point(167, 951)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(114, 27)
-        Me.TextBox7.TabIndex = 24
+        Me.txtTotal.Location = New System.Drawing.Point(956, 951)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.Size = New System.Drawing.Size(114, 27)
+        Me.txtTotal.TabIndex = 24
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(208, 927)
+        Me.Label14.Location = New System.Drawing.Point(997, 927)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(42, 20)
         Me.Label14.TabIndex = 25
         Me.Label14.Text = "Total"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(422, 951)
-        Me.TextBox13.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(114, 27)
-        Me.TextBox13.TabIndex = 26
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(456, 927)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(42, 20)
+        Me.Label15.Size = New System.Drawing.Size(0, 20)
         Me.Label15.TabIndex = 27
-        Me.Label15.Text = "Pagó"
         '
-        'Label16
+        'btnEliminar
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(752, 927)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(52, 20)
-        Me.Label16.TabIndex = 29
-        Me.Label16.Text = "Vuelto"
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(718, 951)
-        Me.TextBox14.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(114, 27)
-        Me.TextBox14.TabIndex = 28
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(552, 481)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(86, 31)
-        Me.Button3.TabIndex = 30
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnEliminar.Location = New System.Drawing.Point(552, 481)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(86, 31)
+        Me.btnEliminar.TabIndex = 30
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(951, 589)
+        Me.Button4.Location = New System.Drawing.Point(1125, 618)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 169)
@@ -521,34 +467,107 @@ Partial Class Venta
         Me.btnBuscar.Text = "BUSCAR"
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
-        'lblRuc
+        'cmbTipoPago
         '
-        Me.lblRuc.AutoSize = True
-        Me.lblRuc.Location = New System.Drawing.Point(23, 260)
-        Me.lblRuc.Name = "lblRuc"
-        Me.lblRuc.Size = New System.Drawing.Size(40, 20)
-        Me.lblRuc.TabIndex = 13
-        Me.lblRuc.Text = "RUC:"
+        Me.cmbTipoPago.FormattingEnabled = True
+        Me.cmbTipoPago.Items.AddRange(New Object() {"EFECTIVO", "TRANSFERENCIA"})
+        Me.cmbTipoPago.Location = New System.Drawing.Point(72, 924)
+        Me.cmbTipoPago.Name = "cmbTipoPago"
+        Me.cmbTipoPago.Size = New System.Drawing.Size(255, 28)
+        Me.cmbTipoPago.TabIndex = 33
+        '
+        'lblIdVendedor
+        '
+        Me.lblIdVendedor.AutoSize = True
+        Me.lblIdVendedor.Location = New System.Drawing.Point(408, 38)
+        Me.lblIdVendedor.Name = "lblIdVendedor"
+        Me.lblIdVendedor.Size = New System.Drawing.Size(17, 20)
+        Me.lblIdVendedor.TabIndex = 34
+        Me.lblIdVendedor.Text = "1"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Id"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Codigo"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 125
+        '
+        'Código
+        '
+        Me.Código.HeaderText = "Nombre"
+        Me.Código.MinimumWidth = 6
+        Me.Código.Name = "Código"
+        Me.Código.Width = 125
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.MinimumWidth = 6
+        Me.Marca.Name = "Marca"
+        Me.Marca.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Talla"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Cantidad"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.Width = 125
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Precio Unitario"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Subtotal"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 125
+        '
+        'lblIdProducto
+        '
+        Me.lblIdProducto.AutoSize = True
+        Me.lblIdProducto.Location = New System.Drawing.Point(362, 116)
+        Me.lblIdProducto.Name = "lblIdProducto"
+        Me.lblIdProducto.Size = New System.Drawing.Size(0, 20)
+        Me.lblIdProducto.TabIndex = 35
         '
         'Venta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1196, 1025)
+        Me.ClientSize = New System.Drawing.Size(1293, 1025)
+        Me.Controls.Add(Me.lblIdProducto)
+        Me.Controls.Add(Me.lblIdVendedor)
+        Me.Controls.Add(Me.cmbTipoPago)
         Me.Controls.Add(Me.btnBuscar)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.TextBox14)
+        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox13)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.txtTotal)
+        Me.Controls.Add(Me.txtCantidad)
+        Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.PanelBoleta)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgvVenta)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -557,7 +576,7 @@ Partial Class Venta
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txtSubtotal)
         Me.Controls.Add(Me.lblPrecio)
         Me.Controls.Add(Me.lblStockActual)
         Me.Controls.Add(Me.lblTalla)
@@ -567,26 +586,28 @@ Partial Class Venta
         Me.Controls.Add(Me.txtCodigoProducto)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "Venta"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Venta"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelBoleta.ResumeLayout(False)
         Me.PanelBoleta.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents txtCodigoProducto As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents rbtnBoleta As RadioButton
+    Friend WithEvents rbtnFactura As RadioButton
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lblNombre As TextBox
     Friend WithEvents lblMarca As TextBox
     Friend WithEvents lblTalla As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtSubtotal As TextBox
     Friend WithEvents lblPrecio As TextBox
     Friend WithEvents lblStockActual As TextBox
     Friend WithEvents Label1 As Label
@@ -597,14 +618,7 @@ Partial Class Venta
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Código As DataGridViewTextBoxColumn
-    Friend WithEvents Marca As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents dgvVenta As DataGridView
     Friend WithEvents PanelBoleta As Panel
     Friend WithEvents lblNomCliente As Label
     Friend WithEvents txtDocumento As TextBox
@@ -614,19 +628,28 @@ Partial Class Venta
     Friend WithEvents lblDireccion As Label
     Friend WithEvents lblTelefono As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents btnAgregar As Button
+    Friend WithEvents txtCantidad As NumericUpDown
+    Friend WithEvents txtTotal As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox13 As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnEliminar As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents btnBuscar As Button
     Friend WithEvents lblRazonSocial As Label
     Friend WithEvents lblCorreo As Label
     Friend WithEvents lblApellido As Label
     Friend WithEvents lblRuc As Label
+    Friend WithEvents cmbTipoPago As ComboBox
+    Friend WithEvents lblIdPersona As Label
+    Friend WithEvents lblIdVendedor As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Código As DataGridViewTextBoxColumn
+    Friend WithEvents Marca As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents lblIdProducto As Label
 End Class
