@@ -4,12 +4,12 @@
     Public Property IdPersonaJuridica As Integer
     Public Property RazonSocial As String
     Public Overloads Property Estado As Boolean
-
+    Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaJuridica.txt"
     ' Método para leer personas jurídicas desde el archivo
     Public Shared Function LeerPersonasJuridicas() As List(Of PersonaJuridica)
         Dim personasJuridicas As New List(Of PersonaJuridica)
         Try
-            Dim lines() As String = System.IO.File.ReadAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaJuridica.txt")
+            Dim lines() As String = System.IO.File.ReadAllLines(RutaArchivo)
             For i As Integer = 1 To lines.Length - 1
                 Dim line As String = lines(i)
                 Dim fields() As String = line.Split("|"c)
@@ -26,6 +26,7 @@
         End Try
         Return personasJuridicas
     End Function
+
 
     Public Shared Function BuscarPersonaJuridicaPorId(idPersona As Integer) As PersonaJuridica
         Dim personasJuridicas As List(Of PersonaJuridica) = LeerPersonasJuridicas()
@@ -59,7 +60,7 @@
             For Each personaJuridica As PersonaJuridica In personasJuridicas
                 lines.Add($"{personaJuridica.IdPersonaJuridica}|{personaJuridica.RazonSocial}|{personaJuridica.IdPersona}|{personaJuridica.Estado}")
             Next
-            System.IO.File.WriteAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaJuridica.txt", lines)
+            System.IO.File.WriteAllLines(RutaArchivo, lines)
         Catch ex As Exception
             MessageBox.Show($"Error al guardar las personas jurídicas: {ex.Message}")
         End Try

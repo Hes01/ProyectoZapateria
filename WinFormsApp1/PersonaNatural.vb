@@ -6,12 +6,12 @@
     Public Property Apellido As String
     Public Property Dni As String
     Public Overloads Property Estado As Boolean
-
+    Public Shared ReadOnly RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt"
     ' Método para leer personas naturales desde el archivo
     Public Shared Function LeerPersonasNaturales() As List(Of PersonaNatural)
         Dim personasNaturales As New List(Of PersonaNatural)
         Try
-            Dim lines() As String = System.IO.File.ReadAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt") 'Datos\persona_natural.txt
+            Dim lines() As String = System.IO.File.ReadAllLines(RutaArchivo) 'Datos\persona_natural.txt
             For i As Integer = 1 To lines.Length - 1
                 Dim line As String = lines(i) 'C:\Users\IK\Desktop\avance paul\proyecto MA
                 Dim fields() As String = line.Split("|"c)
@@ -68,7 +68,7 @@
             For Each personaNatural As PersonaNatural In personasNaturales
                 lines.Add($"{personaNatural.IdPersonaNatural}|{personaNatural.Nombre}|{personaNatural.Apellido}|{personaNatural.Dni}|{personaNatural.IdPersona}|{personaNatural.Estado}")
             Next
-            System.IO.File.WriteAllLines("C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\personaNatural.txt", lines)
+            System.IO.File.WriteAllLines(RutaArchivo, lines)
         Catch ex As Exception
             MessageBox.Show($"Error al guardar las personas naturales: {ex.Message}")
         End Try

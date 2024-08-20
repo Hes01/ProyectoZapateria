@@ -1,22 +1,17 @@
-﻿Public Class EditCliente
+﻿Public Class EditProveedor
     Private ReadOnly _idPersona As Integer
-
     ' Constructor que recibe el ID de la persona
     Public Sub New(idPersona As Integer)
         InitializeComponent()
         _idPersona = idPersona
     End Sub
 
-    Private Sub EditCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub EditProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Cargar datos según el tipo de persona
-        CargarDatosCliente(_idPersona)
-
+        CargarDatosProveedor(_idPersona)
     End Sub
 
-
-
-
-    Public Sub CargarDatosCliente(idPersona As Integer)
+    Public Sub CargarDatosProveedor(idPersona As Integer)
         ' Primero, verificamos si el idPersona existe en PersonaNatural
         Dim persona As Persona = Persona.BuscarPersonaPorId(idPersona)
         If persona IsNot Nothing And persona.Estado = True Then
@@ -46,7 +41,6 @@
                 Dim personaJuridica As PersonaJuridica = PersonaJuridica.BuscarPersonaJuridicaPorId(idPersona)
 
                 If personaJuridica IsNot Nothing Then
-
                     ' Es una PersonaJuridica
                     MostrarCamposPersonaJuridica()
 
@@ -88,7 +82,6 @@
         txtDni.Visible = False
     End Sub
 
-
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         ' Actualizar los datos en los archivos correspondientes según el tipo de persona
 
@@ -121,7 +114,7 @@
         .Correo = txtEmail.Text,
         .Direccion = txtDirección.Text,
         .Ruc = txtRuc.Text,
-        .TipoPersona = "Cliente",
+        .TipoPersona = "Proveedor",
         .Estado = True
     }
         Persona.ModificarPersona(persona)
@@ -134,4 +127,5 @@
         ' Cierra el formulario sin guardar cambios
         Me.Close()
     End Sub
+
 End Class

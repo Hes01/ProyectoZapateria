@@ -1,3 +1,4 @@
 IdPersonaNatural|Nombre|Apellido|Dni|IdPersona|Estado
-1|Juan Romero|Pérez|12345678|1|True
-2|María|Gómez|87654321|3|True
+1|Luis|santillan|74026785|1|True
+2|julian|alvarez|741258963|5|True
+3|jose|ljka|7412589|6|True
