@@ -11,13 +11,14 @@ Public Class Cliente
     End Sub
 
     Private Sub txtBuscar_TextChanged(sender As Object, e As EventArgs) Handles txtBuscar.TextChanged
-        BuscarCliente(txtBuscar.Text)
+        If String.IsNullOrWhiteSpace(txtBuscar.Text) Then
+            ' Si el campo de búsqueda está vacío, recarga todos los datos
+            CargarPersonasEnGrid()
+        Else
+            ' Si hay texto en el campo de búsqueda, realiza la búsqueda
+            BuscarCliente(txtBuscar.Text)
+        End If
     End Sub
-
-    Private Sub dgvClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClientes.CellContentClick
-        ' Aquí podrías cargar los datos del cliente seleccionado para su edición
-    End Sub
-
 
     Private Sub BuscarCliente(criterio As String)
         criterio = criterio.ToLower()
@@ -36,10 +37,6 @@ Public Class Cliente
                          Select cliente).ToList()
 
         dgvClientes.DataSource = listaFiltrada
-
-        If listaFiltrada.Count = 0 Then
-            MessageBox.Show("Cliente no encontrado.", "Búsqueda", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-        End If
     End Sub
 
     Private Sub ActualizarDatos()
@@ -129,6 +126,9 @@ Public Class Cliente
         ' Filtrar solo las personas con estado True (no eliminadas)
         personas = personas.Where(Function(p) p.Estado = True).ToList()
 
+        ' Filtrar solo las personas con TipoPersona (Cliente)
+        personas = personas.Where(Function(p) p.TipoPersona = "Cliente").ToList()
+
         ' Cargar datos de PersonaNatural
         Dim personasNaturales As List(Of PersonaNatural) = PersonaNatural.LeerPersonasNaturales()
 
@@ -169,5 +169,9 @@ Public Class Cliente
 
         ' Mostrar en el DataGridView
         dgvClientes.DataSource = listaPersonas
+    End Sub
+
+    Private Sub dgvClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvClientes.CellContentClick
+
     End Sub
 End Class

@@ -1,3 +1,4 @@
 IdPersonaJuridica|RazonSocial|IdPersona|Estado
-1|Empresa S.A.|2|True
-2|Comercial XYZ|4|True
+1|051201648|2|True
+2|123456|3|True
+3|12345679|4|True

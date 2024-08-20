@@ -44,6 +44,7 @@ Partial Class AddProveedor
         lblNombres = New Label()
         lblRazonSocial = New Label()
         txtRazonSocial = New TextBox()
+        btnCancelar = New Button()
         SuspendLayout()
         ' 
         ' txtEmail
@@ -148,7 +149,7 @@ Partial Class AddProveedor
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Sitka Banner", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Sitka Banner", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point)
         Label5.Location = New Point(41, 41)
         Label5.Name = "Label5"
         Label5.Size = New Size(176, 29)
@@ -228,11 +229,21 @@ Partial Class AddProveedor
         txtRazonSocial.Size = New Size(113, 23)
         txtRazonSocial.TabIndex = 24
         ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Location = New Point(217, 422)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(75, 23)
+        btnCancelar.TabIndex = 34
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = True
+        ' 
         ' AddProveedor
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(470, 468)
+        Controls.Add(btnCancelar)
         Controls.Add(txtDni)
         Controls.Add(lblDni)
         Controls.Add(txtApellidos)
@@ -283,4 +294,5 @@ Partial Class AddProveedor
     Friend WithEvents lblNombres As Label
     Friend WithEvents lblRazonSocial As Label
     Friend WithEvents txtRazonSocial As TextBox
+    Friend WithEvents btnCancelar As Button
 End Class
