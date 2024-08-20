@@ -23,19 +23,13 @@ Partial Class Proveedor
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         btnAgregarProveedor = New Button()
-        btnModificarProveedor = New Button()
-        btnEliminarProveedor = New Button()
-        TextBox1 = New TextBox()
-        btnBuscarProveedor = New Button()
-        DataGridView1 = New DataGridView()
+        btnModificar = New Button()
+        btnEliminar = New Button()
+        txtBuscar = New TextBox()
+        btnBuscar = New Button()
+        dgvProveedor = New DataGridView()
         btnSalirProveedor = New Button()
-        id = New DataGridViewTextBoxColumn()
-        telefono = New DataGridViewTextBoxColumn()
-        email = New DataGridViewTextBoxColumn()
-        direccion = New DataGridViewTextBoxColumn()
-        nombre_rzSocial = New DataGridViewTextBoxColumn()
-        dni_ruc = New DataGridViewTextBoxColumn()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvProveedor, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnAgregarProveedor
@@ -47,48 +41,47 @@ Partial Class Proveedor
         btnAgregarProveedor.Text = "Agregar"
         btnAgregarProveedor.UseVisualStyleBackColor = True
         ' 
-        ' btnModificarProveedor
+        ' btnModificar
         ' 
-        btnModificarProveedor.Location = New Point(140, 486)
-        btnModificarProveedor.Name = "btnModificarProveedor"
-        btnModificarProveedor.Size = New Size(75, 44)
-        btnModificarProveedor.TabIndex = 13
-        btnModificarProveedor.Text = "Modificar"
-        btnModificarProveedor.UseVisualStyleBackColor = True
+        btnModificar.Location = New Point(140, 486)
+        btnModificar.Name = "btnModificar"
+        btnModificar.Size = New Size(75, 44)
+        btnModificar.TabIndex = 13
+        btnModificar.Text = "Modificar"
+        btnModificar.UseVisualStyleBackColor = True
         ' 
-        ' btnEliminarProveedor
+        ' btnEliminar
         ' 
-        btnEliminarProveedor.Location = New Point(246, 486)
-        btnEliminarProveedor.Name = "btnEliminarProveedor"
-        btnEliminarProveedor.Size = New Size(75, 44)
-        btnEliminarProveedor.TabIndex = 14
-        btnEliminarProveedor.Text = "Eliminar"
-        btnEliminarProveedor.UseVisualStyleBackColor = True
+        btnEliminar.Location = New Point(246, 486)
+        btnEliminar.Name = "btnEliminar"
+        btnEliminar.Size = New Size(75, 44)
+        btnEliminar.TabIndex = 14
+        btnEliminar.Text = "Eliminar"
+        btnEliminar.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' txtBuscar
         ' 
-        TextBox1.Location = New Point(28, 87)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(302, 23)
-        TextBox1.TabIndex = 15
+        txtBuscar.Location = New Point(28, 87)
+        txtBuscar.Name = "txtBuscar"
+        txtBuscar.Size = New Size(302, 23)
+        txtBuscar.TabIndex = 15
         ' 
-        ' btnBuscarProveedor
+        ' btnBuscar
         ' 
-        btnBuscarProveedor.Location = New Point(358, 78)
-        btnBuscarProveedor.Name = "btnBuscarProveedor"
-        btnBuscarProveedor.Size = New Size(53, 32)
-        btnBuscarProveedor.TabIndex = 17
-        btnBuscarProveedor.Text = "Buscar"
-        btnBuscarProveedor.UseVisualStyleBackColor = True
+        btnBuscar.Location = New Point(358, 78)
+        btnBuscar.Name = "btnBuscar"
+        btnBuscar.Size = New Size(53, 32)
+        btnBuscar.TabIndex = 17
+        btnBuscar.Text = "Buscar"
+        btnBuscar.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView1
+        ' dgvProveedor
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {id, telefono, email, direccion, nombre_rzSocial, dni_ruc})
-        DataGridView1.Location = New Point(52, 165)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(665, 221)
-        DataGridView1.TabIndex = 18
+        dgvProveedor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvProveedor.Location = New Point(52, 165)
+        dgvProveedor.Name = "dgvProveedor"
+        dgvProveedor.Size = New Size(665, 221)
+        dgvProveedor.TabIndex = 18
         ' 
         ' btnSalirProveedor
         ' 
@@ -99,65 +92,29 @@ Partial Class Proveedor
         btnSalirProveedor.Text = "Salir"
         btnSalirProveedor.UseVisualStyleBackColor = True
         ' 
-        ' id
-        ' 
-        id.HeaderText = "ID"
-        id.Name = "id"
-        ' 
-        ' telefono
-        ' 
-        telefono.HeaderText = "TELEFONO"
-        telefono.Name = "telefono"
-        ' 
-        ' email
-        ' 
-        email.HeaderText = "EMAIL"
-        email.Name = "email"
-        ' 
-        ' direccion
-        ' 
-        direccion.HeaderText = "DIRECCION"
-        direccion.Name = "direccion"
-        ' 
-        ' nombre_rzSocial
-        ' 
-        nombre_rzSocial.HeaderText = "NOMBRE/RAZON SOCIAL"
-        nombre_rzSocial.Name = "nombre_rzSocial"
-        ' 
-        ' dni_ruc
-        ' 
-        dni_ruc.HeaderText = "DNI/RUC"
-        dni_ruc.Name = "dni_ruc"
-        ' 
         ' Proveedor
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(855, 542)
         Controls.Add(btnSalirProveedor)
-        Controls.Add(DataGridView1)
-        Controls.Add(btnBuscarProveedor)
-        Controls.Add(TextBox1)
-        Controls.Add(btnEliminarProveedor)
-        Controls.Add(btnModificarProveedor)
+        Controls.Add(dgvProveedor)
+        Controls.Add(btnBuscar)
+        Controls.Add(txtBuscar)
+        Controls.Add(btnEliminar)
+        Controls.Add(btnModificar)
         Controls.Add(btnAgregarProveedor)
         Name = "Proveedor"
         Text = "Proveedor"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvProveedor, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
     Friend WithEvents btnAgregarProveedor As Button
-    Friend WithEvents btnModificarProveedor As Button
-    Friend WithEvents btnEliminarProveedor As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents btnBuscarProveedor As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents txtBuscar As TextBox
+    Friend WithEvents btnBuscar As Button
+    Friend WithEvents dgvProveedor As DataGridView
     Friend WithEvents btnSalirProveedor As Button
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents telefono As DataGridViewTextBoxColumn
-    Friend WithEvents email As DataGridViewTextBoxColumn
-    Friend WithEvents direccion As DataGridViewTextBoxColumn
-    Friend WithEvents nombre_rzSocial As DataGridViewTextBoxColumn
-    Friend WithEvents dni_ruc As DataGridViewTextBoxColumn
 End Class
