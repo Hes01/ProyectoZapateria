@@ -35,7 +35,6 @@ Partial Class Compra
         Label6 = New Label()
         Label7 = New Label()
         txt_stock = New TextBox()
-        txt_cantidad = New TextBox()
         txt_precioProducto = New TextBox()
         btn_agregar = New Button()
         btn_eliminar = New Button()
@@ -54,8 +53,12 @@ Partial Class Compra
         rbtn_boleta = New RadioButton()
         Label8 = New Label()
         txt_idProveedor = New TextBox()
+        Label10 = New Label()
+        txt_subTotal = New TextBox()
+        txt_cantida = New NumericUpDown()
         CType(tablaCompra, ComponentModel.ISupportInitialize).BeginInit()
         group_comprobante.SuspendLayout()
+        CType(txt_cantida, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -164,13 +167,6 @@ Partial Class Compra
         txt_stock.Name = "txt_stock"
         txt_stock.Size = New Size(125, 27)
         txt_stock.TabIndex = 13
-        ' 
-        ' txt_cantidad
-        ' 
-        txt_cantidad.Location = New Point(361, 341)
-        txt_cantidad.Name = "txt_cantidad"
-        txt_cantidad.Size = New Size(125, 27)
-        txt_cantidad.TabIndex = 14
         ' 
         ' txt_precioProducto
         ' 
@@ -324,11 +320,37 @@ Partial Class Compra
         txt_idProveedor.Size = New Size(125, 27)
         txt_idProveedor.TabIndex = 25
         ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(752, 306)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(67, 20)
+        Label10.TabIndex = 26
+        Label10.Text = "SubTotal"
+        ' 
+        ' txt_subTotal
+        ' 
+        txt_subTotal.Location = New Point(757, 345)
+        txt_subTotal.Name = "txt_subTotal"
+        txt_subTotal.Size = New Size(125, 27)
+        txt_subTotal.TabIndex = 27
+        ' 
+        ' txt_cantida
+        ' 
+        txt_cantida.Location = New Point(357, 344)
+        txt_cantida.Name = "txt_cantida"
+        txt_cantida.Size = New Size(150, 27)
+        txt_cantida.TabIndex = 28
+        ' 
         ' Compra
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1071, 861)
+        Controls.Add(txt_cantida)
+        Controls.Add(txt_subTotal)
+        Controls.Add(Label10)
         Controls.Add(txt_idProveedor)
         Controls.Add(Label8)
         Controls.Add(group_comprobante)
@@ -339,7 +361,6 @@ Partial Class Compra
         Controls.Add(btn_eliminar)
         Controls.Add(btn_agregar)
         Controls.Add(txt_precioProducto)
-        Controls.Add(txt_cantidad)
         Controls.Add(txt_stock)
         Controls.Add(Label7)
         Controls.Add(Label6)
@@ -358,6 +379,7 @@ Partial Class Compra
         CType(tablaCompra, ComponentModel.ISupportInitialize).EndInit()
         group_comprobante.ResumeLayout(False)
         group_comprobante.PerformLayout()
+        CType(txt_cantida, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -394,4 +416,7 @@ Partial Class Compra
     Friend WithEvents rbtn_factura As RadioButton
     Friend WithEvents Label8 As Label
     Friend WithEvents txt_idProveedor As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents txt_subTotal As TextBox
+    Friend WithEvents txt_cantida As NumericUpDown
 End Class
