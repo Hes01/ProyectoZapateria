@@ -7,57 +7,43 @@ Public Class Productos
     End Sub
 
     Private Sub Productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        CargarPersonasEnGrid()
+        CargarProductosEnGrid()
     End Sub
 
-    Private Sub CargarPersonasEnGrid()
-        Dim listaPersonas As New List(Of Object)()
+    Private Sub CargarProductosEnGrid()
+        Dim listaProductos As New List(Of Object)()
 
-        ' Cargar datos de Persona
-        Dim personas As List(Of Persona) = Persona.LeerPersonas()
+        ' Cargar datos de Producto
+        Dim productos As List(Of Producto) = Producto.LeerProductos()
 
         ' Filtrar solo las personas con estado True (no eliminadas)
-        personas = personas.Where(Function(p) p.Estado = True).ToList()
+        productos = productos.Where(Function(p) p.Estado = True).ToList()
 
-        ' Filtara solo las personas con tipoPersona (Cliente)
-        personas = personas.Where(Function(p) p.TipoPersona = "Proveedor").ToList()
 
-        ' Cargar datos de PersonaNatural
-        Dim personasNaturales As List(Of PersonaNatural) = PersonaNatural.LeerPersonasNaturales()
+        ' Cargar datos de Categoria
+        Dim categorias As List(Of Categoria) = Categoria.LeerCategorias()
 
-        ' Cargar datos de PersonaJuridica
-        Dim personasJuridicas As List(Of PersonaJuridica) = PersonaJuridica.LeerPersonasJuridicas()
+        ' Cargar datos de Marcas
+        Dim marcas As List(Of Marca) = Marca.LeerMarcas()
 
         ' Unir los datos de Persona con PersonaNatural y PersonaJuridica
-        For Each persona In personas
-            Dim personaNatural = personasNaturales.FirstOrDefault(Function(p) p.IdPersona = persona.IdPersona)
-            Dim personaJuridica = personasJuridicas.FirstOrDefault(Function(p) p.IdPersona = persona.IdPersona)
+        For Each producto In productos
+            Dim categoriaDProducto = categorias.FirstOrDefault(Function(p) p.IdCategoria = producto.IdCategoria)
+            Dim marcaDProducto = marcas.FirstOrDefault(Function(p) p.IdMarca = producto.IdMarca)
 
-            If personaNatural IsNot Nothing Then
-                listaPersonas.Add(New With {
-                    .Id = persona.IdPersona,
-                    .Nombre = personaNatural.Nombre,
-                    .RazonSocial = "",
-                    .Dni = personaNatural.Dni,
-                    .Ruc = persona.Ruc,
-                    .Telefono = persona.Telefono,
-                    .Correo = persona.Correo,
-                    .Direccion = persona.Direccion,
-                    .TipoPersona = "Natural"
-                })
-            ElseIf personaJuridica IsNot Nothing Then
-                listaPersonas.Add(New With {
-                    .Id = persona.IdPersona,
+            listaProductos.Add(New With {
+
+                    .Id = Persona.IdPersona,
                     .Nombre = "",
-                    .RazonSocial = personaJuridica.RazonSocial,
+                    .RazonSocial = PersonaJuridica.RazonSocial,
                     .Dni = "",
-                    .Ruc = persona.Ruc,
-                    .Telefono = persona.Telefono,
-                    .Correo = persona.Correo,
-                    .Direccion = persona.Direccion,
+                    .Ruc = Persona.Ruc,
+                    .Telefono = Persona.Telefono,
+                    .Correo = Persona.Correo,
+                    .Direccion = Persona.Direccion,
                     .TipoPersona = "Jurídica"
                 })
-            End If
+
         Next
 
         ' Mostrar en el DataGridView

@@ -35,4 +35,8 @@
     Private Sub btnCompra_Click(sender As Object, e As EventArgs) Handles btnCompra.Click
         Compra.Show()
     End Sub
+
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        Productos.Show()
+    End Sub
 End Class

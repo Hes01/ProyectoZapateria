@@ -23,89 +23,33 @@ Partial Class Productos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         tablaProductos = New DataGridView()
-        idProducto = New DataGridViewTextBoxColumn()
-        codigo = New DataGridViewTextBoxColumn()
-        nombre = New DataGridViewTextBoxColumn()
-        marca = New DataGridViewTextBoxColumn()
-        categoria = New DataGridViewTextBoxColumn()
-        precio = New DataGridViewTextBoxColumn()
-        talla = New DataGridViewTextBoxColumn()
-        stock = New DataGridViewTextBoxColumn()
         txt_codigoProducto = New TextBox()
         btn_buscar = New Button()
         btn_agregar = New Button()
         btn_modificar = New Button()
         btn_eliminar = New Button()
         btn_salir = New Button()
+        idProducto = New DataGridViewTextBoxColumn()
+        codigo = New DataGridViewTextBoxColumn()
+        nombre = New DataGridViewTextBoxColumn()
+        marcaG = New DataGridViewTextBoxColumn()
+        categoriaGrid = New DataGridViewTextBoxColumn()
+        precio = New DataGridViewTextBoxColumn()
+        talla = New DataGridViewTextBoxColumn()
+        stock = New DataGridViewTextBoxColumn()
         CType(tablaProductos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' tablaProductos
         ' 
         tablaProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        tablaProductos.Columns.AddRange(New DataGridViewColumn() {idProducto, codigo, nombre, marca, categoria, precio, talla, stock})
+        tablaProductos.Columns.AddRange(New DataGridViewColumn() {idProducto, codigo, nombre, marcaG, categoriaGrid, precio, talla, stock})
         tablaProductos.Location = New Point(79, 227)
         tablaProductos.Name = "tablaProductos"
         tablaProductos.RowHeadersWidth = 51
         tablaProductos.RowTemplate.Height = 29
         tablaProductos.Size = New Size(1052, 167)
         tablaProductos.TabIndex = 0
-        ' 
-        ' idProducto
-        ' 
-        idProducto.HeaderText = "ID Producto"
-        idProducto.MinimumWidth = 6
-        idProducto.Name = "idProducto"
-        idProducto.Width = 125
-        ' 
-        ' codigo
-        ' 
-        codigo.HeaderText = "Código"
-        codigo.MinimumWidth = 6
-        codigo.Name = "codigo"
-        codigo.Width = 125
-        ' 
-        ' nombre
-        ' 
-        nombre.HeaderText = "Nombre"
-        nombre.MinimumWidth = 6
-        nombre.Name = "nombre"
-        nombre.Width = 125
-        ' 
-        ' marca
-        ' 
-        marca.HeaderText = "Marca"
-        marca.MinimumWidth = 6
-        marca.Name = "marca"
-        marca.Width = 125
-        ' 
-        ' categoria
-        ' 
-        categoria.HeaderText = "Categoría"
-        categoria.MinimumWidth = 6
-        categoria.Name = "categoria"
-        categoria.Width = 125
-        ' 
-        ' precio
-        ' 
-        precio.HeaderText = "Precio"
-        precio.MinimumWidth = 6
-        precio.Name = "precio"
-        precio.Width = 125
-        ' 
-        ' talla
-        ' 
-        talla.HeaderText = "Talla"
-        talla.MinimumWidth = 6
-        talla.Name = "talla"
-        talla.Width = 125
-        ' 
-        ' stock
-        ' 
-        stock.HeaderText = "Stock Actual"
-        stock.MinimumWidth = 6
-        stock.Name = "stock"
-        stock.Width = 125
         ' 
         ' txt_codigoProducto
         ' 
@@ -159,6 +103,62 @@ Partial Class Productos
         btn_salir.Text = "Salir"
         btn_salir.UseVisualStyleBackColor = True
         ' 
+        ' idProducto
+        ' 
+        idProducto.HeaderText = "ID Producto"
+        idProducto.MinimumWidth = 6
+        idProducto.Name = "idProducto"
+        idProducto.Width = 125
+        ' 
+        ' codigo
+        ' 
+        codigo.HeaderText = "Código"
+        codigo.MinimumWidth = 6
+        codigo.Name = "codigo"
+        codigo.Width = 125
+        ' 
+        ' nombre
+        ' 
+        nombre.HeaderText = "Nombre"
+        nombre.MinimumWidth = 6
+        nombre.Name = "nombre"
+        nombre.Width = 125
+        ' 
+        ' marcaG
+        ' 
+        marcaG.HeaderText = "Marca"
+        marcaG.MinimumWidth = 6
+        marcaG.Name = "marcaG"
+        marcaG.Width = 125
+        ' 
+        ' categoriaGrid
+        ' 
+        categoriaGrid.HeaderText = "Categoria"
+        categoriaGrid.MinimumWidth = 6
+        categoriaGrid.Name = "categoriaGrid"
+        categoriaGrid.Width = 125
+        ' 
+        ' precio
+        ' 
+        precio.HeaderText = "Precio"
+        precio.MinimumWidth = 6
+        precio.Name = "precio"
+        precio.Width = 125
+        ' 
+        ' talla
+        ' 
+        talla.HeaderText = "Talla"
+        talla.MinimumWidth = 6
+        talla.Name = "talla"
+        talla.Width = 125
+        ' 
+        ' stock
+        ' 
+        stock.HeaderText = "Stock Actual"
+        stock.MinimumWidth = 6
+        stock.Name = "stock"
+        stock.Width = 125
+        ' 
         ' Productos
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -188,8 +188,8 @@ Partial Class Productos
     Friend WithEvents idProducto As DataGridViewTextBoxColumn
     Friend WithEvents codigo As DataGridViewTextBoxColumn
     Friend WithEvents nombre As DataGridViewTextBoxColumn
-    Friend WithEvents marca As DataGridViewTextBoxColumn
-    Friend WithEvents categoria As DataGridViewTextBoxColumn
+    Friend WithEvents marcaG As DataGridViewTextBoxColumn
+    Friend WithEvents categoriaGrid As DataGridViewTextBoxColumn
     Friend WithEvents precio As DataGridViewTextBoxColumn
     Friend WithEvents talla As DataGridViewTextBoxColumn
     Friend WithEvents stock As DataGridViewTextBoxColumn
