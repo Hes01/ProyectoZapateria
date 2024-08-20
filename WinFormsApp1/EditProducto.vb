@@ -1,131 +1,72 @@
 ﻿Public Class EditProducto
-    Private ReadOnly _idPersona As Integer
+    Private ReadOnly _idProducto As Integer
     ' Constructor que recibe el ID de la persona
-    Public Sub New(idPersona As Integer)
+    Public Sub New(idProducto As Integer)
         InitializeComponent()
-        _idPersona = idPersona
+        _idProducto = idProducto
     End Sub
 
-    Private Sub EditProveedor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub EditProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Cargar datos según el tipo de persona
-        CargarDatosProveedor(_idPersona)
+        CargarDatosProducto(_idProducto)
     End Sub
 
-    Public Sub CargarDatosProveedor(idPersona As Integer)
+    Public Sub CargarDatosProducto(idProducto As Integer)
         ' Primero, verificamos si el idPersona existe en PersonaNatural
-        Dim persona As Persona = Persona.BuscarPersonaPorId(idPersona)
-        If persona IsNot Nothing And persona.Estado = True Then
+        Dim producto As Producto = Producto.BuscarProductoPorId(idProducto)
+        If producto IsNot Nothing And producto.Estado = True Then
             'cargar los datos comunes de persona 
-            txtID.Text = persona.IdPersona.ToString()
-            txtTelefono.Text = persona.Telefono
-            txtRuc.Text = persona.Ruc
-            txtDirección.Text = persona.Direccion
-            txtEmail.Text = persona.Correo
+            txt_id.Text = producto.IdProducto.ToString()
+            txt_codigo.Text = producto.Codigo
+            txt_nombre.Text = producto.Nombre
+            txt_talla.Text = producto.Talla
+            txt_precio.Text = producto.Precio
+            txt_stock.Text = producto.StockActual
 
-            Dim personaNatural As PersonaNatural = PersonaNatural.BuscarPersonaNaturalPorId(idPersona)
-
-            If personaNatural IsNot Nothing Then
-                ' Es una PersonaNatural
-                MostrarCamposPersonaNatural()
-
-                ' Cargar los datos en los campos correspondientes
-                'txtID.Text = personaNatural.IdPersonaNatural.ToString()
-                txtNombres.Text = personaNatural.Nombre
-                txtApellidos.Text = personaNatural.Apellido
-                txtDni.Text = personaNatural.Dni
-
-                lblRazonSocial.Visible = False
-                txtRazonSocial.Visible = False
+            ' Buscar la marca
+            Dim marca As Marca = Marca.LeerMarcas().FirstOrDefault(Function(m) m.IdMarca = producto.IdMarca)
+            If marca IsNot Nothing Then
+                txt_marca.Text = marca.Nombre
             Else
-                ' Si no es PersonaNatural, debe ser PersonaJuridica
-                Dim personaJuridica As PersonaJuridica = PersonaJuridica.BuscarPersonaJuridicaPorId(idPersona)
-
-                If personaJuridica IsNot Nothing Then
-                    ' Es una PersonaJuridica
-                    MostrarCamposPersonaJuridica()
-
-                    ' Cargar los datos en los campos correspondientes
-                    'txtID.Text = personaJuridica.IdPersona.ToString()
-                    txtRazonSocial.Text = personaJuridica.RazonSocial
-
-                    lblNombres.Visible = False
-                    lblApellidos.Visible = False
-                    lblDni.Visible = False
-                    txtNombres.Visible = False
-                    txtApellidos.Visible = False
-                    txtDni.Visible = False
-
-                Else
-                    MessageBox.Show("No se encontró la persona con el ID especificado.")
-                End If
+                txt_marca.Text = "-"
             End If
+
+
+            ' Buscar la categoria
+            Dim categoria As Categoria = Categoria.LeerCategorias().FirstOrDefault(Function(m) m.IdCategoria = producto.IdCategoria)
+            If categoria IsNot Nothing Then
+                txt_categoria.Text = categoria.Nombre
+            Else
+                txt_categoria.Text = "-"
+            End If
+        Else
+            MessageBox.Show("Este producto no existe")
         End If
     End Sub
 
-    Private Sub MostrarCamposPersonaNatural()
-        ' Mostrar campos de PersonaNatural
-        txtNombres.Visible = True
-        txtApellidos.Visible = True
-        txtDni.Visible = True
+    Private Sub btn_guardar_Click(sender As Object, e As EventArgs) Handles btn_guardar.Click
+        ' Actualizar los datos en los archivos correspondientes
 
-        ' Ocultar campos de PersonaJuridica
-        txtRazonSocial.Visible = False
-    End Sub
-
-    Private Sub MostrarCamposPersonaJuridica()
-        ' Mostrar campos de PersonaJuridica
-        txtRazonSocial.Visible = True
-
-        ' Ocultar campos de PersonaNatural
-        txtNombres.Visible = False
-        txtApellidos.Visible = False
-        txtDni.Visible = False
-    End Sub
-
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        ' Actualizar los datos en los archivos correspondientes según el tipo de persona
-
-        If txtNombres.Enabled Then
-            ' Guardar cambios para PersonaNatural
-            Dim personaNatural As New PersonaNatural With {
-            .IdPersonaNatural = Integer.Parse(txtID.Text),
-            .Nombre = txtNombres.Text,
-            .Apellido = txtApellidos.Text,
-            .Dni = txtDni.Text,
-            .IdPersona = _idPersona,
-            .Estado = True
-        }
-            personaNatural.ModificarPersonaNatural(personaNatural)
-        ElseIf txtRazonSocial.Enabled Then
-            ' Guardar cambios para PersonaJuridica
-            Dim personaJuridica As New PersonaJuridica With {
-            .IdPersonaJuridica = Integer.Parse(txtID.Text),
-            .RazonSocial = txtRazonSocial.Text,
-            .IdPersona = _idPersona,
-            .Estado = True
-        }
-            personaJuridica.ModificarPersonaJuridica(personaJuridica)
-        End If
-
-        ' Actualizar datos comunes en Persona
-        Dim persona As New Persona With {
-        .IdPersona = _idPersona,
-        .Telefono = txtTelefono.Text,
-        .Correo = txtEmail.Text,
-        .Direccion = txtDirección.Text,
-        .Ruc = txtRuc.Text,
-        .TipoPersona = "Proveedor",
+        ' Actualizar datos en Productos
+        Dim productoAGuardar As New Producto With {
+        .IdProducto = _idProducto,
+        .Codigo = productoAGuardar.Codigo,
+        .Nombre = productoAGuardar.Nombre,
+        .Talla = productoAGuardar.Talla,
+        .Precio = productoAGuardar.Precio,
+        .StockActual = productoAGuardar.StockActual,
+        .IdMarca = productoAGuardar.IdMarca,
+        .IdCategoria = productoAGuardar.IdCategoria,
         .Estado = True
     }
-        persona.ModificarPersona(persona)
+        Producto.ModificarProducto(productoAGuardar)
 
         MessageBox.Show("Los cambios se han guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Me.Close()
     End Sub
 
-    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+    Private Sub btn_salir_Click(sender As Object, e As EventArgs) Handles btn_salir.Click
         ' Cierra el formulario sin guardar cambios
         Me.Close()
     End Sub
-
 End Class

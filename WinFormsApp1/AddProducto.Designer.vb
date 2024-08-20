@@ -28,7 +28,7 @@ Partial Class AddProducto
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(801, 612)
         Name = "AddProducto"
         Text = "AddProducto"
         ResumeLayout(False)

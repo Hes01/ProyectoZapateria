@@ -38,6 +38,37 @@
         Return productos
     End Function
 
+    Public Shared Sub ModificarProducto(productoModificado As Producto)
+        Dim productos As List(Of Producto) = LeerProductos()
+
+        ' Encuentra el índice de la persona a modificar
+        Dim indice As Integer = productos.FindIndex(Function(p) p.IdProducto = productoModificado.IdProducto)
+
+        If indice <> -1 Then
+            ' Actualiza los datos de la persona en la lista
+            productos(indice) = productoModificado
+
+            ' Guarda los cambios en el archivo
+            GuardarProductos(productos)
+        Else
+            MessageBox.Show("El producto no fue encontrado para modificar.")
+        End If
+    End Sub
+
+    Private Shared Sub GuardarProductos(productos As List(Of Producto))
+        Try
+            ' Escribe los encabezados y luego las personas en el archivo
+            Dim lines As New List(Of String)
+            lines.Add("IdProducto|Codigo|Nombre|Talla|Precio|StockActual|IdCategoria|IdMarca|Estado")
+            For Each producto As Producto In productos
+                lines.Add($"{producto.IdProducto}|{producto.Codigo}|{producto.Nombre}|{producto.Talla}|{producto.Precio}|{producto.StockActual}|{producto.IdCategoria}|{producto.IdMarca}")
+            Next
+            System.IO.File.WriteAllLines(RutaArchivo, lines)
+        Catch ex As Exception
+            MessageBox.Show($"Error al guardar los productos: {ex.Message}")
+        End Try
+    End Sub
+
     ' Método para actualizar el stock del producto en el archivo
     Public Sub ActualizarStock(nuevoStock As Integer)
         Dim productos As List(Of Producto) = LeerProductos()
@@ -54,4 +85,12 @@
             System.IO.File.WriteAllLines(RutaArchivo, newLines)
         End If
     End Sub
+
+
+    Public Shared Function BuscarProductoPorId(idProducto As Integer) As Producto
+        Dim productos As List(Of Producto) = LeerProductos()
+        Return productos.FirstOrDefault(Function(p) p.IdProducto = idProducto)
+    End Function
+
+
 End Class
