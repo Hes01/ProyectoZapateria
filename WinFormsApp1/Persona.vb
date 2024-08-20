@@ -1,5 +1,5 @@
 ﻿Public Class Persona
-    Private Const RutaArchivo As String = "C:\Users\IK\Desktop\avance paul\proyecto MA\WinFormsApp1\WinFormsApp1\archivos\persona.txt"
+    Public Const RutaArchivo As String = "Datos/persona.txt"
     Public Property IdPersona As Integer
     Public Property Telefono As String
     Public Property Correo As String
