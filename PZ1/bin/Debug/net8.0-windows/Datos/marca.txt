@@ -1,0 +1,4 @@
+IdMarca|Nombre
+1|Nike
+2|Adidas
+3|Puma

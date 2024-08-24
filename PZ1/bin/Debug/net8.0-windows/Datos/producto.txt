@@ -1,0 +1,3 @@
+IdProducto|Codigo|Nombre|Talla|Precio|StockActual|IdCategoria|IdMarca|Estado
+1|123456|Zapato|42|49,99|10|1|2|True
+2|654321|Botín|40|59,99|5|1|1|True

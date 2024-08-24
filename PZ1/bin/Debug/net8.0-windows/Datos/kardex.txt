@@ -1,0 +1,3 @@
+IdKardex|FechaReg|Operacion|TipoOperacion|Cantidad|IdProducto|Saldo|Estado
+1|2024-08-19|Venta|Salida|2|301|8|True
+2|2024-08-19|Venta|Salida|2|1|-2|True

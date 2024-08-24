@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <StartupObject>PZ1.My.MyApplication</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\Debug\net8.0-windows\Datos\**" />
+    <EmbeddedResource Remove="bin\Debug\net8.0-windows\Datos\**" />
+    <None Remove="bin\Debug\net8.0-windows\Datos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AddCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

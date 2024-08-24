@@ -1,0 +1,3 @@
+IdPersona|Telefono|Correo|Direccion|Ruc|TipoPersona|Estado
+1|555-1234|juan.perez@email.com|Av. Principal 123|12345678901|Cliente|True
+2|555-5678|maria.lopez@email.com|Calle Secundaria 456|98765432100|Vendedor|True

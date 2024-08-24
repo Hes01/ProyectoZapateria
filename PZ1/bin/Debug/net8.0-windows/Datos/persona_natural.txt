@@ -1,0 +1,2 @@
+IdPersonaNatural|Nombre|Apellido|DNI|IdPersona|Estado
+1|Juan|Pérez|12345678|1|True

@@ -1,0 +1,12 @@
+IdComprobante|Fecha|Total|TipoPago|IdPersona|IdVendedor|Estado
+1|2024-08-19|150.50|Contado|1|1|True
+2|2024-08-19|100.00|Efectivo|1|1|True
+3|2024-08-19|100.00|Efectivo|1|1|True
+4|2024-08-19|100.00|Efectivo|1|1|True
+5|2024-08-19|99.98|Efectivo|1|1|True
+6|2024-08-19|249.95|Efectivo|1|1|True
+7|2024-08-19|99.98|Efectivo|1|1|True
+8|2024-08-19|99.98|Efectivo|1|1|True
+9|2024-08-20|269,95|Efectivo|1|1|True
+10|2024-08-20|149,97|Efectivo|1|1|True
+11|2024-08-20|669,88|Efectivo|2|2|True
