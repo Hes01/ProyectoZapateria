@@ -1,2 +1,3 @@
 IdPersonaNatural|Nombre|Apellido|DNI|IdPersona|Estado
 1|Juan|Pérez|12345678|1|True
+2|Juana|Rios|12388393|2|True

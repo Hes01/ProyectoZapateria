@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5+nMvMq5AN8=",
+  "dgSpecHash": "j7k17wpMBYE=",
   "success": true,
   "projectFilePath": "C:\\ZapateriaEnd\\PZ1\\PZ1.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\IK\\.nuget\\packages\\bipscontrolsforms\\1.0.0\\bipscontrolsforms.1.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

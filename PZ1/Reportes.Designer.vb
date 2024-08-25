@@ -26,23 +26,17 @@ Partial Class Reportes
         dtpFecha1Reporte = New DateTimePicker()
         Label2 = New Label()
         Label3 = New Label()
-        DateTimePicker2 = New DateTimePicker()
+        dtpFecha2Reporte = New DateTimePicker()
         GroupBox1 = New GroupBox()
-        DataGridView1 = New DataGridView()
-        id = New DataGridViewTextBoxColumn()
-        vendedor = New DataGridViewTextBoxColumn()
-        total = New DataGridViewTextBoxColumn()
+        dgvVendedores = New DataGridView()
         Label4 = New Label()
         Label5 = New Label()
-        DataGridView2 = New DataGridView()
-        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
+        dgvProductos = New DataGridView()
         btnObtenerVentas = New Button()
         btnMenu = New Button()
         GroupBox1.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvVendedores, ComponentModel.ISupportInitialize).BeginInit()
+        CType(dgvProductos, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -80,19 +74,19 @@ Partial Class Reportes
         Label3.TabIndex = 4
         Label3.Text = "Fecha Final"
         ' 
-        ' DateTimePicker2
+        ' dtpFecha2Reporte
         ' 
-        DateTimePicker2.Location = New Point(264, 79)
-        DateTimePicker2.Name = "DateTimePicker2"
-        DateTimePicker2.Size = New Size(234, 23)
-        DateTimePicker2.TabIndex = 3
+        dtpFecha2Reporte.Location = New Point(264, 79)
+        dtpFecha2Reporte.Name = "dtpFecha2Reporte"
+        dtpFecha2Reporte.Size = New Size(234, 23)
+        dtpFecha2Reporte.TabIndex = 3
         ' 
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(dtpFecha1Reporte)
-        GroupBox1.Controls.Add(DateTimePicker2)
+        GroupBox1.Controls.Add(dtpFecha2Reporte)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Location = New Point(25, 54)
         GroupBox1.Name = "GroupBox1"
@@ -101,30 +95,13 @@ Partial Class Reportes
         GroupBox1.TabStop = False
         GroupBox1.Text = "Fecha de Reporte"
         ' 
-        ' DataGridView1
+        ' dgvVendedores
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {id, vendedor, total})
-        DataGridView1.Location = New Point(25, 260)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(547, 160)
-        DataGridView1.TabIndex = 6
-        ' 
-        ' id
-        ' 
-        id.HeaderText = "ID"
-        id.Name = "id"
-        ' 
-        ' vendedor
-        ' 
-        vendedor.HeaderText = "VENDEDOR"
-        vendedor.Name = "vendedor"
-        vendedor.Width = 300
-        ' 
-        ' total
-        ' 
-        total.HeaderText = "TOTAL VENDIDO"
-        total.Name = "total"
+        dgvVendedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvVendedores.Location = New Point(25, 260)
+        dgvVendedores.Name = "dgvVendedores"
+        dgvVendedores.Size = New Size(547, 160)
+        dgvVendedores.TabIndex = 6
         ' 
         ' Label4
         ' 
@@ -144,30 +121,13 @@ Partial Class Reportes
         Label5.TabIndex = 7
         Label5.Text = "Ventas de productos"
         ' 
-        ' DataGridView2
+        ' dgvProductos
         ' 
-        DataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView2.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3})
-        DataGridView2.Location = New Point(25, 518)
-        DataGridView2.Name = "DataGridView2"
-        DataGridView2.Size = New Size(547, 160)
-        DataGridView2.TabIndex = 8
-        ' 
-        ' DataGridViewTextBoxColumn1
-        ' 
-        DataGridViewTextBoxColumn1.HeaderText = "ID"
-        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        ' 
-        ' DataGridViewTextBoxColumn2
-        ' 
-        DataGridViewTextBoxColumn2.HeaderText = "PRODUCTO"
-        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        DataGridViewTextBoxColumn2.Width = 300
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "TOTAL VENDIDO"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvProductos.Location = New Point(25, 518)
+        dgvProductos.Name = "dgvProductos"
+        dgvProductos.Size = New Size(547, 160)
+        dgvProductos.TabIndex = 8
         ' 
         ' btnObtenerVentas
         ' 
@@ -195,17 +155,17 @@ Partial Class Reportes
         ClientSize = New Size(592, 749)
         Controls.Add(btnMenu)
         Controls.Add(btnObtenerVentas)
-        Controls.Add(DataGridView2)
+        Controls.Add(dgvProductos)
         Controls.Add(Label5)
         Controls.Add(Label4)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvVendedores)
         Controls.Add(GroupBox1)
         Name = "Reportes"
         Text = "Reportes"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
-        CType(DataGridView2, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvVendedores, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvProductos, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -214,18 +174,12 @@ Partial Class Reportes
     Friend WithEvents dtpFecha1Reporte As DateTimePicker
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents dtpFecha2Reporte As DateTimePicker
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvVendedores As DataGridView
     Friend WithEvents Label4 As Label
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents vendedor As DataGridViewTextBoxColumn
-    Friend WithEvents total As DataGridViewTextBoxColumn
     Friend WithEvents Label5 As Label
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents dgvProductos As DataGridView
     Friend WithEvents btnObtenerVentas As Button
     Friend WithEvents btnMenu As Button
 End Class
