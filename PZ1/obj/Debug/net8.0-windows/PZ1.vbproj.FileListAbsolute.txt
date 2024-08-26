@@ -26,6 +26,3 @@ C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\PZ1.pdb
 C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\PZ1.genruntimeconfig.cache
 C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\ref\PZ1.dll
 C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\PZ1.sourcelink.json
-C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\PZ1.vbproj.AssemblyReference.cache
-C:\ZapateriaEnd\PZ1\bin\Debug\net8.0-windows\BipsControlsForms.dll
-C:\ZapateriaEnd\PZ1\obj\Debug\net8.0-windows\PZ1.vbproj.Up2Date

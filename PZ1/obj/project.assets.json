@@ -1,50 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {
-      "BipsControlsForms/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0-windows7.0/BipsControlsForms.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/BipsControlsForms.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App"
-        ],
-        "contentFiles": {
-          "contentFiles/any/net6.0-windows7.0/Software.ico": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          }
-        }
-      }
-    }
+    "net8.0-windows7.0": {}
   },
-  "libraries": {
-    "BipsControlsForms/1.0.0": {
-      "sha512": "0MpCjHktCfzNbyQq+3Vif4JFE4bgjH5UqtXNtMRXaPIVcMw/RKYFWXrd1L6BDFA1N5fDPPuhTM5AjlQq+f2/eg==",
-      "type": "package",
-      "path": "bipscontrolsforms/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "IconoBipsControls.PNG",
-        "README.md",
-        "bipscontrolsforms.1.0.0.nupkg.sha512",
-        "bipscontrolsforms.nuspec",
-        "content/Software.ico",
-        "contentFiles/any/net6.0-windows7.0/Software.ico",
-        "lib/net6.0-windows7.0/BipsControlsForms.dll"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
-      "BipsControlsForms >= 1.0.0"
-    ]
+    "net8.0-windows7.0": []
   },
   "packageFolders": {
     "C:\\Users\\IK\\.nuget\\packages\\": {}
@@ -89,12 +50,6 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
-        "dependencies": {
-          "BipsControlsForms": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("PZ1"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fabdb6acdc3372f9540adf00fd33b76e53612743"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4c402ab77623d06dfa62d795aefbd79d1c012d1"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PZ1"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PZ1"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
