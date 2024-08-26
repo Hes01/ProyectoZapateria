@@ -4,5 +4,8 @@
     <Compile Update="Home.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MenuCompactar.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

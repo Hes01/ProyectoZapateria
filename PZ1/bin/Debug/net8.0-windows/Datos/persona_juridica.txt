@@ -1,2 +1,1 @@
 IdPersonaJuridica|RazonSocial|IdPersona|Estado
-1|Zapatos S.A.|2|True

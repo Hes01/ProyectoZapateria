@@ -31,7 +31,7 @@ Partial Class Home
         btnReportes = New Button()
         btnCerrarS = New Button()
         btnHomeProveedor = New Button()
-        Button4 = New Button()
+        btnMantenimiento = New Button()
         btnProductos = New Button()
         lblFechaHora = New Label()
         timerActualizacion = New Timer(components)
@@ -153,25 +153,25 @@ Partial Class Home
         btnHomeProveedor.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
         btnHomeProveedor.Location = New Point(167, 365)
         btnHomeProveedor.Name = "btnHomeProveedor"
-        btnHomeProveedor.Size = New Size(118, 87)
+        btnHomeProveedor.Size = New Size(118, 104)
         btnHomeProveedor.TabIndex = 8
         btnHomeProveedor.Text = "Proveedores"
         btnHomeProveedor.TextAlign = ContentAlignment.BottomCenter
         btnHomeProveedor.UseVisualStyleBackColor = False
         ' 
-        ' Button4
+        ' btnMantenimiento
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
-        Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), Image)
-        Button4.BackgroundImageLayout = ImageLayout.Center
-        Button4.ForeColor = Color.Black
-        Button4.Location = New Point(551, 262)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(173, 125)
-        Button4.TabIndex = 9
-        Button4.Text = "Mantenimiento"
-        Button4.TextAlign = ContentAlignment.BottomCenter
-        Button4.UseVisualStyleBackColor = False
+        btnMantenimiento.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        btnMantenimiento.BackgroundImage = CType(resources.GetObject("btnMantenimiento.BackgroundImage"), Image)
+        btnMantenimiento.BackgroundImageLayout = ImageLayout.Center
+        btnMantenimiento.ForeColor = Color.Black
+        btnMantenimiento.Location = New Point(551, 262)
+        btnMantenimiento.Name = "btnMantenimiento"
+        btnMantenimiento.Size = New Size(173, 125)
+        btnMantenimiento.TabIndex = 9
+        btnMantenimiento.Text = "Mantenimiento"
+        btnMantenimiento.TextAlign = ContentAlignment.BottomCenter
+        btnMantenimiento.UseVisualStyleBackColor = False
         ' 
         ' btnProductos
         ' 
@@ -230,7 +230,7 @@ Partial Class Home
         ClientSize = New Size(736, 523)
         Controls.Add(Label1)
         Controls.Add(lblFechaHora)
-        Controls.Add(Button4)
+        Controls.Add(btnMantenimiento)
         Controls.Add(btnHomeProveedor)
         Controls.Add(btnCerrarS)
         Controls.Add(btnReportes)
@@ -253,7 +253,7 @@ Partial Class Home
     Friend WithEvents btnReportes As Button
     Friend WithEvents btnCerrarS As Button
     Friend WithEvents btnHomeProveedor As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnMantenimiento As Button
     Friend WithEvents btnProductos As Button
     Friend WithEvents lblFechaHora As Label
     Friend WithEvents timerActualizacion As Timer
