@@ -51,6 +51,7 @@ Partial Class AddProveedor
         ' 
         txtEmail.Location = New Point(92, 333)
         txtEmail.Name = "txtEmail"
+        txtEmail.PlaceholderText = "Email"
         txtEmail.Size = New Size(113, 23)
         txtEmail.TabIndex = 19
         ' 
@@ -67,6 +68,7 @@ Partial Class AddProveedor
         ' 
         txtDirección.Location = New Point(92, 280)
         txtDirección.Name = "txtDirección"
+        txtDirección.PlaceholderText = "Dirección"
         txtDirección.Size = New Size(113, 23)
         txtDirección.TabIndex = 17
         ' 
@@ -83,6 +85,7 @@ Partial Class AddProveedor
         ' 
         txtTelefono.Location = New Point(92, 227)
         txtTelefono.Name = "txtTelefono"
+        txtTelefono.PlaceholderText = "Telefono"
         txtTelefono.Size = New Size(113, 23)
         txtTelefono.TabIndex = 15
         ' 
@@ -99,6 +102,7 @@ Partial Class AddProveedor
         ' 
         txtRuc.Location = New Point(92, 170)
         txtRuc.Name = "txtRuc"
+        txtRuc.PlaceholderText = "Ruc"
         txtRuc.Size = New Size(113, 23)
         txtRuc.TabIndex = 13
         ' 
@@ -122,8 +126,11 @@ Partial Class AddProveedor
         ' 
         ' txtID
         ' 
+        txtID.Enabled = False
+        txtID.HideSelection = False
         txtID.Location = New Point(92, 125)
         txtID.Name = "txtID"
+        txtID.PlaceholderText = "id"
         txtID.Size = New Size(37, 23)
         txtID.TabIndex = 10
         ' 
@@ -136,6 +143,7 @@ Partial Class AddProveedor
         cmbTipo.Name = "cmbTipo"
         cmbTipo.Size = New Size(113, 23)
         cmbTipo.TabIndex = 20
+        cmbTipo.Text = "Tipo"
         ' 
         ' Label4
         ' 
@@ -169,6 +177,7 @@ Partial Class AddProveedor
         ' 
         txtDni.Location = New Point(322, 279)
         txtDni.Name = "txtDni"
+        txtDni.PlaceholderText = "Dni"
         txtDni.Size = New Size(113, 23)
         txtDni.TabIndex = 33
         ' 
@@ -185,6 +194,7 @@ Partial Class AddProveedor
         ' 
         txtApellidos.Location = New Point(322, 226)
         txtApellidos.Name = "txtApellidos"
+        txtApellidos.PlaceholderText = "Apellidos"
         txtApellidos.Size = New Size(113, 23)
         txtApellidos.TabIndex = 31
         ' 
@@ -201,6 +211,7 @@ Partial Class AddProveedor
         ' 
         txtNombres.Location = New Point(322, 173)
         txtNombres.Name = "txtNombres"
+        txtNombres.PlaceholderText = "Nombres"
         txtNombres.Size = New Size(113, 23)
         txtNombres.TabIndex = 29
         ' 
@@ -226,6 +237,7 @@ Partial Class AddProveedor
         ' 
         txtRazonSocial.Location = New Point(322, 120)
         txtRazonSocial.Name = "txtRazonSocial"
+        txtRazonSocial.PlaceholderText = "Razon Social"
         txtRazonSocial.Size = New Size(113, 23)
         txtRazonSocial.TabIndex = 24
         ' 
@@ -267,6 +279,7 @@ Partial Class AddProveedor
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtID)
+        FormBorderStyle = FormBorderStyle.None
         Name = "AddProveedor"
         Text = "AddProveedor"
         ResumeLayout(False)

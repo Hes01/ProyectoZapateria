@@ -61,8 +61,9 @@ Partial Class Proveedor
         ' 
         ' txtBuscar
         ' 
-        txtBuscar.Location = New Point(28, 87)
+        txtBuscar.Location = New Point(41, 84)
         txtBuscar.Name = "txtBuscar"
+        txtBuscar.PlaceholderText = "Nombres, dni, razon social..."
         txtBuscar.Size = New Size(302, 23)
         txtBuscar.TabIndex = 15
         ' 
@@ -105,6 +106,7 @@ Partial Class Proveedor
         Controls.Add(btnEliminar)
         Controls.Add(btnModificar)
         Controls.Add(btnAgregarProveedor)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Proveedor"
         Text = "Proveedor"
         CType(dgvProveedor, ComponentModel.ISupportInitialize).EndInit()

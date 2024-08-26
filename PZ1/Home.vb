@@ -45,4 +45,8 @@
     Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
 
     End Sub
+
+    Private Sub timerActualizacion_Tick(sender As Object, e As EventArgs) Handles timerActualizacion.Tick
+        lblFechaHora.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss")
+    End Sub
 End Class

@@ -105,6 +105,7 @@ Partial Class Cliente
         Controls.Add(btnEliminar)
         Controls.Add(btnModificar)
         Controls.Add(btnAgregar)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Cliente"
         Text = "Cliente"
         CType(dgvClientes, ComponentModel.ISupportInitialize).EndInit()

@@ -51,6 +51,7 @@ Partial Class AddCliente
         ' 
         txtDni.Location = New Point(321, 268)
         txtDni.Name = "txtDni"
+        txtDni.PlaceholderText = "Dni"
         txtDni.Size = New Size(113, 23)
         txtDni.TabIndex = 55
         ' 
@@ -67,6 +68,7 @@ Partial Class AddCliente
         ' 
         txtApellidos.Location = New Point(321, 215)
         txtApellidos.Name = "txtApellidos"
+        txtApellidos.PlaceholderText = "Apellidos"
         txtApellidos.Size = New Size(113, 23)
         txtApellidos.TabIndex = 53
         ' 
@@ -83,6 +85,7 @@ Partial Class AddCliente
         ' 
         txtNombres.Location = New Point(321, 162)
         txtNombres.Name = "txtNombres"
+        txtNombres.PlaceholderText = "Nombres"
         txtNombres.Size = New Size(113, 23)
         txtNombres.TabIndex = 51
         ' 
@@ -108,6 +111,7 @@ Partial Class AddCliente
         ' 
         txtRazonSocial.Location = New Point(321, 109)
         txtRazonSocial.Name = "txtRazonSocial"
+        txtRazonSocial.PlaceholderText = "Razon Social"
         txtRazonSocial.Size = New Size(113, 23)
         txtRazonSocial.TabIndex = 48
         ' 
@@ -148,11 +152,13 @@ Partial Class AddCliente
         cmbTipo.Name = "cmbTipo"
         cmbTipo.Size = New Size(113, 23)
         cmbTipo.TabIndex = 44
+        cmbTipo.Text = "Tipo"
         ' 
         ' txtEmail
         ' 
         txtEmail.Location = New Point(91, 322)
         txtEmail.Name = "txtEmail"
+        txtEmail.PlaceholderText = "Email"
         txtEmail.Size = New Size(113, 23)
         txtEmail.TabIndex = 43
         ' 
@@ -169,6 +175,7 @@ Partial Class AddCliente
         ' 
         txtDirección.Location = New Point(91, 269)
         txtDirección.Name = "txtDirección"
+        txtDirección.PlaceholderText = "Dirección"
         txtDirección.Size = New Size(113, 23)
         txtDirección.TabIndex = 41
         ' 
@@ -185,6 +192,7 @@ Partial Class AddCliente
         ' 
         txtTelefono.Location = New Point(91, 216)
         txtTelefono.Name = "txtTelefono"
+        txtTelefono.PlaceholderText = "Telefono"
         txtTelefono.Size = New Size(113, 23)
         txtTelefono.TabIndex = 39
         ' 
@@ -201,6 +209,7 @@ Partial Class AddCliente
         ' 
         txtRuc.Location = New Point(91, 159)
         txtRuc.Name = "txtRuc"
+        txtRuc.PlaceholderText = "Ruc"
         txtRuc.Size = New Size(113, 23)
         txtRuc.TabIndex = 37
         ' 
@@ -224,8 +233,10 @@ Partial Class AddCliente
         ' 
         ' txtID
         ' 
+        txtID.HideSelection = False
         txtID.Location = New Point(91, 114)
         txtID.Name = "txtID"
+        txtID.PlaceholderText = "Id"
         txtID.Size = New Size(37, 23)
         txtID.TabIndex = 34
         ' 
@@ -267,6 +278,7 @@ Partial Class AddCliente
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtID)
+        FormBorderStyle = FormBorderStyle.None
         Name = "AddCliente"
         Text = "AddCliente"
         ResumeLayout(False)

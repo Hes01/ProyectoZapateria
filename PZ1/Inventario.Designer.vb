@@ -22,10 +22,10 @@ Partial Class Inventario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Inventario))
         Label1 = New Label()
         txtCodigoProducto = New TextBox()
         btnBuscar = New Button()
-        Label2 = New Label()
         dgvProductoKardex = New DataGridView()
         Column3 = New DataGridViewTextBoxColumn()
         Column4 = New DataGridViewTextBoxColumn()
@@ -39,12 +39,14 @@ Partial Class Inventario
         OPERACION = New DataGridViewTextBoxColumn()
         TIPO = New DataGridViewTextBoxColumn()
         CANTIDAD = New DataGridViewTextBoxColumn()
+        btnMenu = New Button()
         CType(dgvProductoKardex, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.LightGreen
         Label1.Font = New Font("Microsoft Sans Serif", 24F, FontStyle.Bold)
         Label1.Location = New Point(379, 22)
         Label1.Name = "Label1"
@@ -54,30 +56,22 @@ Partial Class Inventario
         ' 
         ' txtCodigoProducto
         ' 
-        txtCodigoProducto.Location = New Point(176, 109)
+        txtCodigoProducto.Location = New Point(39, 107)
         txtCodigoProducto.Margin = New Padding(3, 2, 3, 2)
         txtCodigoProducto.Name = "txtCodigoProducto"
+        txtCodigoProducto.PlaceholderText = "Codigo de Producto"
         txtCodigoProducto.Size = New Size(141, 23)
         txtCodigoProducto.TabIndex = 1
         ' 
         ' btnBuscar
         ' 
-        btnBuscar.Location = New Point(379, 107)
+        btnBuscar.Location = New Point(200, 107)
         btnBuscar.Margin = New Padding(3, 2, 3, 2)
         btnBuscar.Name = "btnBuscar"
-        btnBuscar.Size = New Size(94, 23)
+        btnBuscar.Size = New Size(66, 23)
         btnBuscar.TabIndex = 2
         btnBuscar.Text = "BUSCAR"
         btnBuscar.UseVisualStyleBackColor = True
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(27, 111)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(116, 15)
-        Label2.TabIndex = 3
-        Label2.Text = "CODIGO PRODUCTO"
         ' 
         ' dgvProductoKardex
         ' 
@@ -175,14 +169,26 @@ Partial Class Inventario
         CANTIDAD.Name = "CANTIDAD"
         CANTIDAD.Width = 125
         ' 
+        ' btnMenu
+        ' 
+        btnMenu.Location = New Point(12, 11)
+        btnMenu.Margin = New Padding(3, 2, 3, 2)
+        btnMenu.Name = "btnMenu"
+        btnMenu.Size = New Size(66, 23)
+        btnMenu.TabIndex = 5
+        btnMenu.Text = "Menu"
+        btnMenu.UseVisualStyleBackColor = True
+        ' 
         ' Inventario
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LemonChiffon
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Center
         ClientSize = New Size(957, 510)
+        Controls.Add(btnMenu)
         Controls.Add(dgvProductoKardex)
-        Controls.Add(Label2)
         Controls.Add(btnBuscar)
         Controls.Add(txtCodigoProducto)
         Controls.Add(Label1)
@@ -198,7 +204,6 @@ Partial Class Inventario
     Friend WithEvents Label1 As Label
     Friend WithEvents txtCodigoProducto As TextBox
     Friend WithEvents btnBuscar As Button
-    Friend WithEvents Label2 As Label
     Friend WithEvents dgvProductoKardex As DataGridView
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
@@ -212,4 +217,5 @@ Partial Class Inventario
     Friend WithEvents OPERACION As DataGridViewTextBoxColumn
     Friend WithEvents TIPO As DataGridViewTextBoxColumn
     Friend WithEvents CANTIDAD As DataGridViewTextBoxColumn
+    Friend WithEvents btnMenu As Button
 End Class

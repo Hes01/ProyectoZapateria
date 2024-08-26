@@ -22,6 +22,8 @@ Partial Class Home
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home))
         btnVentas = New Button()
         btnCompra = New Button()
         btnInventario = New Button()
@@ -31,97 +33,203 @@ Partial Class Home
         btnHomeProveedor = New Button()
         Button4 = New Button()
         btnProductos = New Button()
+        lblFechaHora = New Label()
+        timerActualizacion = New Timer(components)
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' btnVentas
         ' 
-        btnVentas.Location = New Point(100, 101)
+        btnVentas.BackColor = Color.Transparent
+        btnVentas.BackgroundImage = CType(resources.GetObject("btnVentas.BackgroundImage"), Image)
+        btnVentas.BackgroundImageLayout = ImageLayout.Center
+        btnVentas.FlatAppearance.BorderColor = Color.Silver
+        btnVentas.FlatAppearance.BorderSize = 2
+        btnVentas.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnVentas.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnVentas.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnVentas.Location = New Point(24, 101)
         btnVentas.Name = "btnVentas"
-        btnVentas.Size = New Size(118, 54)
+        btnVentas.Size = New Size(118, 113)
         btnVentas.TabIndex = 0
         btnVentas.Text = "Venta"
-        btnVentas.UseVisualStyleBackColor = True
+        btnVentas.TextAlign = ContentAlignment.BottomCenter
+        btnVentas.UseVisualStyleBackColor = False
         ' 
         ' btnCompra
         ' 
-        btnCompra.Location = New Point(278, 101)
+        btnCompra.BackColor = Color.Transparent
+        btnCompra.BackgroundImage = CType(resources.GetObject("btnCompra.BackgroundImage"), Image)
+        btnCompra.BackgroundImageLayout = ImageLayout.Center
+        btnCompra.FlatAppearance.BorderColor = Color.Silver
+        btnCompra.FlatAppearance.BorderSize = 2
+        btnCompra.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnCompra.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnCompra.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnCompra.Location = New Point(167, 101)
         btnCompra.Name = "btnCompra"
-        btnCompra.Size = New Size(118, 54)
+        btnCompra.Size = New Size(118, 113)
         btnCompra.TabIndex = 1
         btnCompra.Text = "Compra"
-        btnCompra.UseVisualStyleBackColor = True
+        btnCompra.TextAlign = ContentAlignment.BottomCenter
+        btnCompra.UseVisualStyleBackColor = False
         ' 
         ' btnInventario
         ' 
+        btnInventario.BackColor = Color.Transparent
+        btnInventario.BackgroundImage = CType(resources.GetObject("btnInventario.BackgroundImage"), Image)
+        btnInventario.BackgroundImageLayout = ImageLayout.Center
+        btnInventario.FlatAppearance.BorderColor = Color.Silver
+        btnInventario.FlatAppearance.BorderSize = 2
+        btnInventario.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnInventario.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnInventario.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
         btnInventario.Location = New Point(24, 239)
         btnInventario.Name = "btnInventario"
-        btnInventario.Size = New Size(118, 54)
+        btnInventario.Size = New Size(118, 98)
         btnInventario.TabIndex = 3
         btnInventario.Text = "Inventario"
-        btnInventario.UseVisualStyleBackColor = True
+        btnInventario.TextAlign = ContentAlignment.BottomCenter
+        btnInventario.UseVisualStyleBackColor = False
         ' 
         ' btnClientes
         ' 
-        btnClientes.Location = New Point(191, 239)
+        btnClientes.BackColor = Color.Transparent
+        btnClientes.BackgroundImage = CType(resources.GetObject("btnClientes.BackgroundImage"), Image)
+        btnClientes.BackgroundImageLayout = ImageLayout.Center
+        btnClientes.FlatAppearance.BorderColor = Color.Silver
+        btnClientes.FlatAppearance.BorderSize = 2
+        btnClientes.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnClientes.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnClientes.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnClientes.Location = New Point(315, 101)
         btnClientes.Name = "btnClientes"
-        btnClientes.Size = New Size(118, 54)
+        btnClientes.Size = New Size(118, 113)
         btnClientes.TabIndex = 4
         btnClientes.Text = "Clientes"
-        btnClientes.UseVisualStyleBackColor = True
+        btnClientes.TextAlign = ContentAlignment.BottomCenter
+        btnClientes.UseVisualStyleBackColor = False
         ' 
         ' btnReportes
         ' 
-        btnReportes.Location = New Point(361, 239)
+        btnReportes.BackColor = Color.Transparent
+        btnReportes.BackgroundImage = CType(resources.GetObject("btnReportes.BackgroundImage"), Image)
+        btnReportes.BackgroundImageLayout = ImageLayout.Center
+        btnReportes.FlatAppearance.BorderColor = Color.Silver
+        btnReportes.FlatAppearance.BorderSize = 2
+        btnReportes.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnReportes.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnReportes.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnReportes.Location = New Point(315, 239)
         btnReportes.Name = "btnReportes"
-        btnReportes.Size = New Size(118, 54)
+        btnReportes.Size = New Size(118, 98)
         btnReportes.TabIndex = 5
         btnReportes.Text = "Reportes"
-        btnReportes.UseVisualStyleBackColor = True
+        btnReportes.TextAlign = ContentAlignment.BottomCenter
+        btnReportes.UseVisualStyleBackColor = False
         ' 
         ' btnCerrarS
         ' 
-        btnCerrarS.Location = New Point(278, 359)
+        btnCerrarS.BackColor = Color.Snow
+        btnCerrarS.BackgroundImage = CType(resources.GetObject("btnCerrarS.BackgroundImage"), Image)
+        btnCerrarS.BackgroundImageLayout = ImageLayout.Center
+        btnCerrarS.Location = New Point(590, 136)
         btnCerrarS.Name = "btnCerrarS"
-        btnCerrarS.Size = New Size(88, 32)
+        btnCerrarS.Size = New Size(88, 95)
         btnCerrarS.TabIndex = 6
-        btnCerrarS.Text = "Cerrar Sesión"
-        btnCerrarS.UseVisualStyleBackColor = True
+        btnCerrarS.Text = "Salir"
+        btnCerrarS.TextAlign = ContentAlignment.BottomCenter
+        btnCerrarS.UseVisualStyleBackColor = False
         ' 
         ' btnHomeProveedor
         ' 
-        btnHomeProveedor.Location = New Point(512, 239)
+        btnHomeProveedor.BackColor = Color.Transparent
+        btnHomeProveedor.BackgroundImage = CType(resources.GetObject("btnHomeProveedor.BackgroundImage"), Image)
+        btnHomeProveedor.BackgroundImageLayout = ImageLayout.Center
+        btnHomeProveedor.FlatAppearance.BorderColor = Color.Silver
+        btnHomeProveedor.FlatAppearance.BorderSize = 2
+        btnHomeProveedor.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnHomeProveedor.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnHomeProveedor.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnHomeProveedor.Location = New Point(167, 365)
         btnHomeProveedor.Name = "btnHomeProveedor"
-        btnHomeProveedor.Size = New Size(118, 54)
+        btnHomeProveedor.Size = New Size(118, 87)
         btnHomeProveedor.TabIndex = 8
         btnHomeProveedor.Text = "Proveedores"
-        btnHomeProveedor.UseVisualStyleBackColor = True
+        btnHomeProveedor.TextAlign = ContentAlignment.BottomCenter
+        btnHomeProveedor.UseVisualStyleBackColor = False
         ' 
         ' Button4
         ' 
         Button4.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        Button4.BackgroundImage = CType(resources.GetObject("Button4.BackgroundImage"), Image)
+        Button4.BackgroundImageLayout = ImageLayout.Center
         Button4.ForeColor = Color.Black
-        Button4.Location = New Point(429, 348)
+        Button4.Location = New Point(551, 262)
         Button4.Name = "Button4"
-        Button4.Size = New Size(173, 54)
+        Button4.Size = New Size(173, 125)
         Button4.TabIndex = 9
         Button4.Text = "Mantenimiento"
+        Button4.TextAlign = ContentAlignment.BottomCenter
         Button4.UseVisualStyleBackColor = False
         ' 
         ' btnProductos
         ' 
-        btnProductos.Location = New Point(459, 101)
+        btnProductos.BackColor = Color.Transparent
+        btnProductos.BackgroundImage = CType(resources.GetObject("btnProductos.BackgroundImage"), Image)
+        btnProductos.BackgroundImageLayout = ImageLayout.Center
+        btnProductos.FlatAppearance.BorderColor = Color.Silver
+        btnProductos.FlatAppearance.BorderSize = 2
+        btnProductos.FlatAppearance.CheckedBackColor = Color.Transparent
+        btnProductos.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnProductos.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnProductos.Location = New Point(167, 239)
         btnProductos.Name = "btnProductos"
-        btnProductos.Size = New Size(118, 54)
+        btnProductos.Size = New Size(118, 98)
         btnProductos.TabIndex = 2
         btnProductos.Text = "Productos"
-        btnProductos.UseVisualStyleBackColor = True
+        btnProductos.TextAlign = ContentAlignment.BottomCenter
+        btnProductos.UseVisualStyleBackColor = False
+        ' 
+        ' lblFechaHora
+        ' 
+        lblFechaHora.AutoSize = True
+        lblFechaHora.BackColor = Color.Black
+        lblFechaHora.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblFechaHora.ForeColor = Color.Red
+        lblFechaHora.Location = New Point(561, 496)
+        lblFechaHora.Name = "lblFechaHora"
+        lblFechaHora.Size = New Size(108, 18)
+        lblFechaHora.TabIndex = 10
+        lblFechaHora.Text = "                    "
+        ' 
+        ' timerActualizacion
+        ' 
+        timerActualizacion.Enabled = True
+        timerActualizacion.Interval = 1000
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = SystemColors.Highlight
+        Label1.Font = New Font("Sitka Small", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Gold
+        Label1.Location = New Point(1, -3)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(358, 71)
+        Label1.TabIndex = 11
+        Label1.Text = "Zapateria JEP"
         ' 
         ' Home
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Info
-        ClientSize = New Size(669, 433)
+        BackgroundImage = My.Resources.Resources.Fondo_amarillo_azul_
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(736, 523)
+        Controls.Add(Label1)
+        Controls.Add(lblFechaHora)
         Controls.Add(Button4)
         Controls.Add(btnHomeProveedor)
         Controls.Add(btnCerrarS)
@@ -131,9 +239,11 @@ Partial Class Home
         Controls.Add(btnProductos)
         Controls.Add(btnCompra)
         Controls.Add(btnVentas)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Home"
         Text = "Form2"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents btnVentas As Button
@@ -145,4 +255,7 @@ Partial Class Home
     Friend WithEvents btnHomeProveedor As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents btnProductos As Button
+    Friend WithEvents lblFechaHora As Label
+    Friend WithEvents timerActualizacion As Timer
+    Friend WithEvents Label1 As Label
 End Class

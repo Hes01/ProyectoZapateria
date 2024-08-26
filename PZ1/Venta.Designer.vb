@@ -578,6 +578,7 @@ Partial Class Venta
         Controls.Add(lblNombre)
         Controls.Add(GroupBox1)
         Controls.Add(txtCodigoProducto)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Venta"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Venta"

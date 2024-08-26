@@ -6,7 +6,7 @@ Public Class Login
 
     End Sub
 
-    Private archivoUsuarios As String = "C:\ZapateriaEnd\WFA1\WFA1\archivos\Usuarios.csv" ' Ruta al archivo CSV o JSON
+    Private archivoUsuarios As String = "Datos\Usuarios.csv" ' Ruta al archivo CSV o JSON
 
     Private Function ValidarCredenciales(username As String, password As String) As Boolean
         ' Lee el archivo y verifica las credenciales
@@ -46,5 +46,9 @@ Public Class Login
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Application.Exit()
     End Sub
 End Class

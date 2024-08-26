@@ -56,6 +56,7 @@ Partial Class Compra
         Label10 = New Label()
         txt_subTotal = New TextBox()
         txt_cantida = New NumericUpDown()
+        btnCancelar = New Button()
         CType(tablaCompra, ComponentModel.ISupportInitialize).BeginInit()
         group_comprobante.SuspendLayout()
         CType(txt_cantida, ComponentModel.ISupportInitialize).BeginInit()
@@ -206,12 +207,12 @@ Partial Class Compra
         ' 
         tablaCompra.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         tablaCompra.Columns.AddRange(New DataGridViewColumn() {Código, Marca, Modelo, Talla, Cantidad, SubTotal})
-        tablaCompra.Location = New Point(66, 364)
+        tablaCompra.Location = New Point(12, 365)
         tablaCompra.Margin = New Padding(3, 2, 3, 2)
         tablaCompra.Name = "tablaCompra"
         tablaCompra.RowHeadersWidth = 51
         tablaCompra.RowTemplate.Height = 29
-        tablaCompra.Size = New Size(699, 186)
+        tablaCompra.Size = New Size(769, 186)
         tablaCompra.TabIndex = 19
         ' 
         ' Código
@@ -258,7 +259,7 @@ Partial Class Compra
         ' 
         ' btn_generaCompra
         ' 
-        btn_generaCompra.Location = New Point(794, 397)
+        btn_generaCompra.Location = New Point(806, 393)
         btn_generaCompra.Margin = New Padding(3, 2, 3, 2)
         btn_generaCompra.Name = "btn_generaCompra"
         btn_generaCompra.Size = New Size(82, 81)
@@ -362,12 +363,23 @@ Partial Class Compra
         txt_cantida.Size = New Size(131, 23)
         txt_cantida.TabIndex = 28
         ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Location = New Point(806, 28)
+        btnCancelar.Margin = New Padding(3, 2, 3, 2)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(82, 22)
+        btnCancelar.TabIndex = 29
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = True
+        ' 
         ' Compra
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.MistyRose
         ClientSize = New Size(900, 562)
+        Controls.Add(btnCancelar)
         Controls.Add(txt_cantida)
         Controls.Add(txt_subTotal)
         Controls.Add(Label10)
@@ -394,6 +406,7 @@ Partial Class Compra
         Controls.Add(btn_buscarCodigo)
         Controls.Add(txt_codigo)
         Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "Compra"
         Text = "Compra"
@@ -440,4 +453,5 @@ Partial Class Compra
     Friend WithEvents Label10 As Label
     Friend WithEvents txt_subTotal As TextBox
     Friend WithEvents txt_cantida As NumericUpDown
+    Friend WithEvents btnCancelar As Button
 End Class

@@ -49,6 +49,7 @@ Partial Class EditCliente
         ' 
         txtDni.Location = New Point(313, 265)
         txtDni.Name = "txtDni"
+        txtDni.PlaceholderText = "Dni"
         txtDni.Size = New Size(113, 23)
         txtDni.TabIndex = 77
         ' 
@@ -65,6 +66,7 @@ Partial Class EditCliente
         ' 
         txtApellidos.Location = New Point(313, 212)
         txtApellidos.Name = "txtApellidos"
+        txtApellidos.PlaceholderText = "Apellidos"
         txtApellidos.Size = New Size(113, 23)
         txtApellidos.TabIndex = 75
         ' 
@@ -81,6 +83,7 @@ Partial Class EditCliente
         ' 
         txtNombres.Location = New Point(313, 159)
         txtNombres.Name = "txtNombres"
+        txtNombres.PlaceholderText = "Nombres"
         txtNombres.Size = New Size(113, 23)
         txtNombres.TabIndex = 73
         ' 
@@ -106,6 +109,7 @@ Partial Class EditCliente
         ' 
         txtRazonSocial.Location = New Point(313, 106)
         txtRazonSocial.Name = "txtRazonSocial"
+        txtRazonSocial.PlaceholderText = "Razón Social"
         txtRazonSocial.Size = New Size(113, 23)
         txtRazonSocial.TabIndex = 70
         ' 
@@ -132,6 +136,7 @@ Partial Class EditCliente
         ' 
         txtEmail.Location = New Point(83, 319)
         txtEmail.Name = "txtEmail"
+        txtEmail.PlaceholderText = "Email"
         txtEmail.Size = New Size(113, 23)
         txtEmail.TabIndex = 65
         ' 
@@ -148,6 +153,7 @@ Partial Class EditCliente
         ' 
         txtDirección.Location = New Point(83, 266)
         txtDirección.Name = "txtDirección"
+        txtDirección.PlaceholderText = "Dirección"
         txtDirección.Size = New Size(113, 23)
         txtDirección.TabIndex = 63
         ' 
@@ -164,6 +170,7 @@ Partial Class EditCliente
         ' 
         txtTelefono.Location = New Point(83, 213)
         txtTelefono.Name = "txtTelefono"
+        txtTelefono.PlaceholderText = "Telefono"
         txtTelefono.Size = New Size(113, 23)
         txtTelefono.TabIndex = 61
         ' 
@@ -180,6 +187,7 @@ Partial Class EditCliente
         ' 
         txtRuc.Location = New Point(83, 156)
         txtRuc.Name = "txtRuc"
+        txtRuc.PlaceholderText = "ruc"
         txtRuc.Size = New Size(113, 23)
         txtRuc.TabIndex = 59
         ' 
@@ -203,8 +211,10 @@ Partial Class EditCliente
         ' 
         ' txtID
         ' 
+        txtID.Enabled = False
         txtID.Location = New Point(83, 111)
         txtID.Name = "txtID"
+        txtID.PlaceholderText = "id"
         txtID.Size = New Size(37, 23)
         txtID.TabIndex = 56
         ' 
@@ -244,6 +254,7 @@ Partial Class EditCliente
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtID)
+        FormBorderStyle = FormBorderStyle.None
         Name = "EditCliente"
         Text = "EditCliente"
         ResumeLayout(False)

@@ -58,6 +58,7 @@ Partial Class EditProveedor
         ' 
         txtDni.Location = New Point(334, 266)
         txtDni.Name = "txtDni"
+        txtDni.PlaceholderText = "Dni"
         txtDni.Size = New Size(113, 23)
         txtDni.TabIndex = 98
         ' 
@@ -74,6 +75,7 @@ Partial Class EditProveedor
         ' 
         txtApellidos.Location = New Point(334, 213)
         txtApellidos.Name = "txtApellidos"
+        txtApellidos.PlaceholderText = "Apellidos"
         txtApellidos.Size = New Size(113, 23)
         txtApellidos.TabIndex = 96
         ' 
@@ -90,6 +92,7 @@ Partial Class EditProveedor
         ' 
         txtNombres.Location = New Point(334, 160)
         txtNombres.Name = "txtNombres"
+        txtNombres.PlaceholderText = "Nombres"
         txtNombres.Size = New Size(113, 23)
         txtNombres.TabIndex = 94
         ' 
@@ -115,6 +118,7 @@ Partial Class EditProveedor
         ' 
         txtRazonSocial.Location = New Point(334, 107)
         txtRazonSocial.Name = "txtRazonSocial"
+        txtRazonSocial.PlaceholderText = "Razón Social"
         txtRazonSocial.Size = New Size(113, 23)
         txtRazonSocial.TabIndex = 91
         ' 
@@ -141,6 +145,7 @@ Partial Class EditProveedor
         ' 
         txtEmail.Location = New Point(104, 320)
         txtEmail.Name = "txtEmail"
+        txtEmail.PlaceholderText = "Email"
         txtEmail.Size = New Size(113, 23)
         txtEmail.TabIndex = 88
         ' 
@@ -157,6 +162,7 @@ Partial Class EditProveedor
         ' 
         txtDirección.Location = New Point(104, 267)
         txtDirección.Name = "txtDirección"
+        txtDirección.PlaceholderText = "Dirección"
         txtDirección.Size = New Size(113, 23)
         txtDirección.TabIndex = 86
         ' 
@@ -173,6 +179,7 @@ Partial Class EditProveedor
         ' 
         txtTelefono.Location = New Point(104, 214)
         txtTelefono.Name = "txtTelefono"
+        txtTelefono.PlaceholderText = "Telefono"
         txtTelefono.Size = New Size(113, 23)
         txtTelefono.TabIndex = 84
         ' 
@@ -189,6 +196,7 @@ Partial Class EditProveedor
         ' 
         txtRuc.Location = New Point(104, 157)
         txtRuc.Name = "txtRuc"
+        txtRuc.PlaceholderText = "ruc"
         txtRuc.Size = New Size(113, 23)
         txtRuc.TabIndex = 82
         ' 
@@ -212,8 +220,10 @@ Partial Class EditProveedor
         ' 
         ' txtID
         ' 
+        txtID.Enabled = False
         txtID.Location = New Point(104, 112)
         txtID.Name = "txtID"
+        txtID.PlaceholderText = "id"
         txtID.Size = New Size(37, 23)
         txtID.TabIndex = 79
         ' 
@@ -222,7 +232,7 @@ Partial Class EditProveedor
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
-        ClientSize = New Size(800, 450)
+        ClientSize = New Size(483, 450)
         Controls.Add(btnCancelar)
         Controls.Add(txtDni)
         Controls.Add(lblDni)
@@ -244,6 +254,7 @@ Partial Class EditProveedor
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(txtID)
+        FormBorderStyle = FormBorderStyle.None
         Name = "EditProveedor"
         Text = "EditProveedor"
         ResumeLayout(False)

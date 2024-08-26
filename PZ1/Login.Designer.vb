@@ -22,34 +22,17 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Label1 = New Label()
-        Label2 = New Label()
         txtUsuario = New TextBox()
         txtContraseña = New TextBox()
         btnIngresar = New Button()
+        btnSalir = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(83, 84)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(50, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Usuario:"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(63, 141)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(70, 15)
-        Label2.TabIndex = 1
-        Label2.Text = "Contraseña:"
         ' 
         ' txtUsuario
         ' 
-        txtUsuario.Location = New Point(150, 81)
+        txtUsuario.Location = New Point(49, 263)
         txtUsuario.Name = "txtUsuario"
         txtUsuario.PlaceholderText = "Usuario"
         txtUsuario.Size = New Size(200, 23)
@@ -57,7 +40,7 @@ Partial Class Login
         ' 
         ' txtContraseña
         ' 
-        txtContraseña.Location = New Point(150, 138)
+        txtContraseña.Location = New Point(49, 306)
         txtContraseña.Name = "txtContraseña"
         txtContraseña.PasswordChar = "*"c
         txtContraseña.PlaceholderText = "contraseña"
@@ -66,34 +49,63 @@ Partial Class Login
         ' 
         ' btnIngresar
         ' 
-        btnIngresar.Location = New Point(197, 199)
+        btnIngresar.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnIngresar.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnIngresar.FlatStyle = FlatStyle.Popup
+        btnIngresar.Location = New Point(164, 365)
         btnIngresar.Name = "btnIngresar"
         btnIngresar.Size = New Size(100, 38)
         btnIngresar.TabIndex = 4
         btnIngresar.Text = "Ingresar"
         btnIngresar.UseVisualStyleBackColor = True
         ' 
+        ' btnSalir
+        ' 
+        btnSalir.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
+        btnSalir.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        btnSalir.FlatStyle = FlatStyle.Flat
+        btnSalir.Location = New Point(43, 365)
+        btnSalir.Name = "btnSalir"
+        btnSalir.Size = New Size(100, 38)
+        btnSalir.TabIndex = 5
+        btnSalir.Text = "Salir"
+        btnSalir.UseVisualStyleBackColor = True
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.BackgroundImage = My.Resources.Resources._Login2
+        PictureBox1.BackgroundImageLayout = ImageLayout.Center
+        PictureBox1.Location = New Point(49, 35)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(200, 176)
+        PictureBox1.TabIndex = 6
+        PictureBox1.TabStop = False
+        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.MenuHighlight
-        ClientSize = New Size(450, 276)
+        BackgroundImage = My.Resources.Resources.fondo_login_
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(314, 464)
+        Controls.Add(PictureBox1)
+        Controls.Add(btnSalir)
         Controls.Add(btnIngresar)
         Controls.Add(txtContraseña)
         Controls.Add(txtUsuario)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Login"
         Text = "Form1"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents txtUsuario As TextBox
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents btnIngresar As Button
+    Friend WithEvents btnSalir As Button
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class

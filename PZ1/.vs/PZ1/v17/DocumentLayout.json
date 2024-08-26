@@ -3,36 +3,92 @@
   "WorkspaceRootPath": "C:\\ZapateriaEnd\\PZ1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:inventario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\compra.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:compra.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:reportes.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\compra.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:compra.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_natural.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\Datos\\persona_natural.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\Datos\\persona.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\venta.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:venta.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\proveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:proveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\editproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:editproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\editcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:editcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:cliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\addproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:addproveedor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\addcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:addcliente.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\detalles_comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\detalles_comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\persona.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\persona.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\producto.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\Datos\\producto.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\comprobantes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\producto.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\producto.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\persona_natural.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\persona_natural.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|c:\\zapateriaend\\pz1\\bin\\debug\\net8.0-windows\\datos\\persona_juridica.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2BC85313-CB29-41D7-8D23-A0F8EA595BB7}|PZ1.vbproj|solutionrelative:bin\\debug\\net8.0-windows\\datos\\persona_juridica.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 93,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,66 +114,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.vb",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
-              "RelativeDocumentMoniker": "Home.vb",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
-              "RelativeToolTip": "Home.vb",
-              "ViewState": "AQIAABsAAAAAAAAAAAAuwC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-08-26T10:52:35.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.vb [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
-              "RelativeDocumentMoniker": "Home.vb",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Home.vb [Dise\u00F1o]",
-              "RelativeToolTip": "Home.vb [Dise\u00F1o]",
+              "Title": "Inventario.vb",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Inventario.vb",
+              "RelativeDocumentMoniker": "Inventario.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Inventario.vb",
+              "RelativeToolTip": "Inventario.vb",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAuwKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-08-26T10:52:32.589Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "detalles_comprobantes.txt",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\detalles_comprobantes.txt",
-              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\detalles_comprobantes.txt",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\detalles_comprobantes.txt",
-              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\detalles_comprobantes.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-26T10:50:30.199Z",
+              "WhenOpened": "2024-08-26T12:07:52.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "comprobantes.txt",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
-              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
-              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-26T10:50:06.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "producto.txt",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
-              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
-              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-26T10:50:00.661Z",
+              "DocumentIndex": 3,
+              "Title": "Reportes.vb",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Reportes.vb",
+              "RelativeDocumentMoniker": "Reportes.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Reportes.vb",
+              "RelativeToolTip": "Reportes.vb",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAuwJUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T12:06:11.785Z",
               "EditorCaption": ""
             },
             {
@@ -128,27 +146,38 @@
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\persona_natural.txt",
               "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_natural.txt",
               "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\persona_natural.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-08-26T10:48:18.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "persona_juridica.txt",
-              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
-              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
-              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
-              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-08-26T10:48:17.777Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "Compra.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Compra.vb",
+              "RelativeDocumentMoniker": "Compra.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Compra.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Compra.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:52:30.819Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Inventario.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Inventario.vb",
+              "RelativeDocumentMoniker": "Inventario.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Inventario.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Inventario.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:33:52.002Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "persona.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\persona.txt",
@@ -158,6 +187,201 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-08-26T10:48:11.984Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Compra.vb",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Compra.vb",
+              "RelativeDocumentMoniker": "Compra.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Compra.vb",
+              "RelativeToolTip": "Compra.vb",
+              "ViewState": "AQIAABcBAAAAAAAAAAAuwCwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T12:04:46.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reportes.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Reportes.vb",
+              "RelativeDocumentMoniker": "Reportes.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Reportes.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Reportes.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:56:35.044Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Login.vb",
+              "RelativeDocumentMoniker": "Login.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Login.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Login.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:08:17.097Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Venta.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Venta.vb",
+              "RelativeDocumentMoniker": "Venta.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Venta.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Venta.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:56:54.108Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Proveedor.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Proveedor.vb",
+              "RelativeDocumentMoniker": "Proveedor.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Proveedor.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Proveedor.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:55:53.842Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Home.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
+              "RelativeDocumentMoniker": "Home.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Home.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Home.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:08:12.828Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditProveedor.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\EditProveedor.vb",
+              "RelativeDocumentMoniker": "EditProveedor.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\EditProveedor.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EditProveedor.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:54:35.693Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditCliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\EditCliente.vb",
+              "RelativeDocumentMoniker": "EditCliente.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\EditCliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "EditCliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:53:17.642Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Cliente.vb",
+              "RelativeDocumentMoniker": "Cliente.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Cliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "Cliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T12:00:05.124Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddCliente.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\AddCliente.vb",
+              "RelativeDocumentMoniker": "AddCliente.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\AddCliente.vb [Dise\u00F1o]",
+              "RelativeToolTip": "AddCliente.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:42:47.252Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddProveedor.vb [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\AddProveedor.vb",
+              "RelativeDocumentMoniker": "AddProveedor.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\AddProveedor.vb [Dise\u00F1o]",
+              "RelativeToolTip": "AddProveedor.vb [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T11:48:02.364Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Usuarios.csv",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\Usuarios.csv",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\Usuarios.csv",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\Usuarios.csv",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\Usuarios.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-08-26T11:31:31.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Home.vb",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
+              "RelativeDocumentMoniker": "Home.vb",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
+              "RelativeToolTip": "Home.vb",
+              "ViewState": "AQIAABYAAAAAAAAAAAAjwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-08-26T10:52:35.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "comprobantes.txt",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\comprobantes.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-26T10:50:06.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "producto.txt",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\producto.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-26T10:50:00.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "persona_juridica.txt",
+              "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
+              "RelativeDocumentMoniker": "bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
+              "ToolTip": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
+              "RelativeToolTip": "bin\\Debug\\net8.0-windows\\Datos\\persona_juridica.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-26T10:48:17.777Z"
             }
           ]
         }

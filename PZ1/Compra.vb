@@ -293,4 +293,11 @@
     Private Sub Compra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
+
+        Home.Show()
+        Me.Hide()
+
+    End Sub
 End Class

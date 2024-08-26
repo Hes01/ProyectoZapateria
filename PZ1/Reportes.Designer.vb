@@ -29,15 +29,9 @@ Partial Class Reportes
         dtpFecha2Reporte = New DateTimePicker()
         GroupBox1 = New GroupBox()
         dgvVendedores = New DataGridView()
-        id = New DataGridViewTextBoxColumn()
-        vendedor = New DataGridViewTextBoxColumn()
-        total = New DataGridViewTextBoxColumn()
         Label4 = New Label()
         Label5 = New Label()
         dgvProductos = New DataGridView()
-        DataGridViewTextBoxColumn1 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn2 = New DataGridViewTextBoxColumn()
-        DataGridViewTextBoxColumn3 = New DataGridViewTextBoxColumn()
         btnObtenerVentas = New Button()
         btnMenu = New Button()
         GroupBox1.SuspendLayout()
@@ -104,27 +98,10 @@ Partial Class Reportes
         ' dgvVendedores
         ' 
         dgvVendedores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvVendedores.Columns.AddRange(New DataGridViewColumn() {id, vendedor, total})
         dgvVendedores.Location = New Point(25, 260)
         dgvVendedores.Name = "dgvVendedores"
         dgvVendedores.Size = New Size(547, 160)
         dgvVendedores.TabIndex = 6
-        ' 
-        ' id
-        ' 
-        id.HeaderText = "ID"
-        id.Name = "id"
-        ' 
-        ' vendedor
-        ' 
-        vendedor.HeaderText = "VENDEDOR"
-        vendedor.Name = "vendedor"
-        vendedor.Width = 300
-        ' 
-        ' total
-        ' 
-        total.HeaderText = "TOTAL VENDIDO"
-        total.Name = "total"
         ' 
         ' Label4
         ' 
@@ -147,27 +124,10 @@ Partial Class Reportes
         ' dgvProductos
         ' 
         dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvProductos.Columns.AddRange(New DataGridViewColumn() {DataGridViewTextBoxColumn1, DataGridViewTextBoxColumn2, DataGridViewTextBoxColumn3})
         dgvProductos.Location = New Point(25, 518)
         dgvProductos.Name = "dgvProductos"
         dgvProductos.Size = New Size(547, 160)
         dgvProductos.TabIndex = 8
-        ' 
-        ' DataGridViewTextBoxColumn1
-        ' 
-        DataGridViewTextBoxColumn1.HeaderText = "ID"
-        DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        ' 
-        ' DataGridViewTextBoxColumn2
-        ' 
-        DataGridViewTextBoxColumn2.HeaderText = "PRODUCTO"
-        DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        DataGridViewTextBoxColumn2.Width = 300
-        ' 
-        ' DataGridViewTextBoxColumn3
-        ' 
-        DataGridViewTextBoxColumn3.HeaderText = "TOTAL VENDIDO"
-        DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         ' 
         ' btnObtenerVentas
         ' 
@@ -200,6 +160,7 @@ Partial Class Reportes
         Controls.Add(Label4)
         Controls.Add(dgvVendedores)
         Controls.Add(GroupBox1)
+        FormBorderStyle = FormBorderStyle.None
         Name = "Reportes"
         Text = "Reportes"
         GroupBox1.ResumeLayout(False)
@@ -218,14 +179,8 @@ Partial Class Reportes
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents dgvVendedores As DataGridView
     Friend WithEvents Label4 As Label
-    Friend WithEvents id As DataGridViewTextBoxColumn
-    Friend WithEvents vendedor As DataGridViewTextBoxColumn
-    Friend WithEvents total As DataGridViewTextBoxColumn
     Friend WithEvents Label5 As Label
     Friend WithEvents dgvProductos As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents btnObtenerVentas As Button
     Friend WithEvents btnMenu As Button
 End Class
