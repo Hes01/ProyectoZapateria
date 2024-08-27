@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IK\\Desktop\\PZ1Jeremy\\PZ1\\PZ1.vbproj": {}
+    "C:\\ZapateriaEnd\\PZ1\\PZ1.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\IK\\Desktop\\PZ1Jeremy\\PZ1\\PZ1.vbproj": {
+    "C:\\ZapateriaEnd\\PZ1\\PZ1.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IK\\Desktop\\PZ1Jeremy\\PZ1\\PZ1.vbproj",
+        "projectUniqueName": "C:\\ZapateriaEnd\\PZ1\\PZ1.vbproj",
         "projectName": "PZ1",
-        "projectPath": "C:\\Users\\IK\\Desktop\\PZ1Jeremy\\PZ1\\PZ1.vbproj",
+        "projectPath": "C:\\ZapateriaEnd\\PZ1\\PZ1.vbproj",
         "packagesPath": "C:\\Users\\IK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IK\\Desktop\\PZ1Jeremy\\PZ1\\obj\\",
+        "outputPath": "C:\\ZapateriaEnd\\PZ1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IK\\AppData\\Roaming\\NuGet\\NuGet.Config",
