@@ -195,7 +195,7 @@ Partial Class Home
         ' 
         lblFechaHora.AutoSize = True
         lblFechaHora.BackColor = Color.Black
-        lblFechaHora.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblFechaHora.Font = New Font("Tahoma", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         lblFechaHora.ForeColor = Color.Red
         lblFechaHora.Location = New Point(561, 496)
         lblFechaHora.Name = "lblFechaHora"
@@ -212,7 +212,7 @@ Partial Class Home
         ' 
         Label1.AutoSize = True
         Label1.BackColor = SystemColors.Highlight
-        Label1.Font = New Font("Sitka Small", 36F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Sitka Small", 36F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.Gold
         Label1.Location = New Point(1, -3)
         Label1.Name = "Label1"

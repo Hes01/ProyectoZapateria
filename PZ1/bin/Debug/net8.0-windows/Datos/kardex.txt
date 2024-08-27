@@ -1,3 +1,12 @@
 IdKardex|FechaReg|Operacion|TipoOperacion|Cantidad|IdProducto|Saldo|Estado
-1|2024-08-19|Venta|Salida|2|301|8|True
-2|2024-08-19|Venta|Salida|2|1|-2|True
+1|2024-08-21|Compra|Entrada|10|1|10|True
+2|2024-08-21|Compra|Entrada|5|2|5|True
+3|2024-08-21|Compra|Entrada|10|3|10|True
+4|2024-08-21|Compra|Entrada|15|4|15|True
+5|2024-08-21|Compra|Entrada|5|5|5|True
+6|2024-08-21|Compra|Entrada|10|6|10|True
+7|10|2024-08-21|Compra|Entrada|10|7|10|True
+8|2024-08-21|Compra|Entrada|5|8|5|True
+9|2024-08-21|Compra|Entrada|10|9|10|True
+10|2024-08-21|Compra|Entrada|10|10|10|True
+11|2024-08-25|Venta|Salida|2|1|8|True

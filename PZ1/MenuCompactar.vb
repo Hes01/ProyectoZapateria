@@ -14,8 +14,60 @@
     End Sub
 
     Private Sub btnSitu_Click(sender As Object, e As EventArgs) Handles btnSitu.Click
-        ' Aquí podrías implementar el método para compactación in situ
+        CompactarPersonasInSitu()
     End Sub
+
+    Public Shared Sub CompactarPersonasInSitu()
+        Dim rutaArchivoPersonas As String = "Datos\persona.txt"
+
+        Try
+            ' Leer todas las líneas del archivo persona.txt
+            Dim lineasPersona() As String = System.IO.File.ReadAllLines(rutaArchivoPersonas)
+            Dim lineasPersonaFiltradas As New List(Of String)()
+
+            ' Verificar si hay líneas en el archivo
+            If lineasPersona.Length > 0 Then
+                ' Agregar el encabezado al archivo filtrado
+                lineasPersonaFiltradas.Add(lineasPersona(0))
+
+                ' Procesar cada línea de persona.txt (excluyendo el encabezado)
+                For i As Integer = 1 To lineasPersona.Length - 1
+                    Dim linea As String = lineasPersona(i)
+                    Dim campos() As String = linea.Split("|"c)
+
+                    ' Asegurarse de que hay suficientes campos en la línea
+                    If campos.Length >= 7 Then
+                        Dim idPersona As Integer
+                        Dim estado As Boolean
+
+                        ' Validar y convertir el campo idPersona y estado
+                        If Integer.TryParse(campos(0).Trim(), idPersona) AndAlso
+                       Boolean.TryParse(campos(6).Trim(), estado) Then
+
+                            If estado Then
+                                ' Si la persona está activa, se agrega al archivo filtrado
+                                lineasPersonaFiltradas.Add(linea)
+                            Else
+                                ' Si la persona está eliminada, elimina sus referencias en otras tablas
+                                EliminarReferenciasDePersona(idPersona)
+                            End If
+                        End If
+                    End If
+                Next
+
+                ' Sobrescribir el archivo original con las líneas filtradas
+                System.IO.File.WriteAllLines(rutaArchivoPersonas, lineasPersonaFiltradas)
+
+                MessageBox.Show("Compactación in situ de personas completada con éxito.")
+            Else
+                MessageBox.Show("El archivo está vacío o no se pudo leer.")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show($"Error durante la compactación in situ: {ex.Message}")
+        End Try
+    End Sub
+
 
     Public Shared Sub CompactarPersonas()
         Dim rutaArchivoPersonas As String = "Datos\persona.txt"
@@ -163,4 +215,15 @@
         System.IO.File.WriteAllLines(rutaArchivoDetalleComprobante, lineasFiltradas)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        DetalleComprobante.CompactarDetalles()
+        Comprobante.CompactarPorCopia()
+        Kardex.CompactarKardexPorCopia()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        DetalleComprobante.CompactarDetallesInSitu()
+        Comprobante.CompactarComprobantesInSitu()
+        Kardex.CompactarKardexInSitu()
+    End Sub
 End Class

@@ -13,8 +13,8 @@
 
     Private Sub btnHomeProveedor_Click(sender As Object, e As EventArgs) Handles btnHomeProveedor.Click
 
-        Proveedor.Show()
-        Me.Hide()
+        Proveedor.Show
+        Hide
 
     End Sub
 
@@ -43,6 +43,7 @@
     End Sub
 
     Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        Productos.Show()
 
     End Sub
 

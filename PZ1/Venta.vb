@@ -16,7 +16,7 @@
     ' Método para buscar un producto por su código en el archivo
     Private Function BuscarProductoPorCodigo(codigo As String) As Producto
         Dim producto As Producto = Nothing
-        Dim rutaArchivo As String = Producto.RutaArchivo ' Ruta relativa
+        Dim rutaArchivo As String = "Datos\producto.txt" ' Ruta relativa
 
         Try
             Dim lines() As String = System.IO.File.ReadAllLines(rutaArchivo)
@@ -143,7 +143,7 @@
         lblTelefono.Text = "Teléfono: " & persona.Telefono
         lblCorreo.Text = "Correo: " & persona.Correo
         lblDireccion.Text = "Dirección: " & persona.Direccion
-
+        lblIdPersona.Text = persona.IdPersona
         If TypeOf personaTipo Is PersonaNatural Then
             lblNomCliente.Text = "Nombre: " & CType(personaTipo, PersonaNatural).Nombre
             lblApellido.Text = "Apellido: " & CType(personaTipo, PersonaNatural).Apellido
@@ -270,11 +270,11 @@
         For Each row As DataGridViewRow In tablaDetalle.Rows
             If Not row.IsNewRow Then
                 Dim idProductoStr As String = row.Cells(0).Value.ToString()
-                MessageBox.Show(idProductoStr)
+
                 Dim cantidadStr As String = row.Cells(5).Value.ToString()
-                MessageBox.Show(cantidadStr)
+
                 Dim precioVentaStr As String = row.Cells(7).Value.ToString()
-                MessageBox.Show(precioVentaStr)
+
 
                 Dim idProducto As Integer
                 Dim cantidad As Integer
@@ -320,7 +320,6 @@
                 kardex.RegistrarOperacion()
                 Dim nuevoStock As Integer = Kardex.CalcularStockActual(idProducto)
                 Dim producto As New Producto()
-
                 producto.ActualizarStock(idProducto, nuevoStock)
             End If
         Next
@@ -371,7 +370,8 @@
         limpiar()
     End Sub
 
-    Private Sub Venta_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Home.Show()
+        Me.Dispose()
     End Sub
 End Class

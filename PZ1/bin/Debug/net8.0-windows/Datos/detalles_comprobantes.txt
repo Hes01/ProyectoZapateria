@@ -1,2 +1,16 @@
 IdDetalle|Cantidad|PrecioVenta|IdProducto|IdComprobante|Estado
-1|2|75.25|301|1|True
+1|2|99.99|1|1|True
+2|1|49.99|2|1|True
+3|3|79.99|3|2|True
+4|4|89.99|4|3|True
+5|2|39.99|5|4|True
+6|3|69.99|6|5|True
+7|5|119.99|7|6|True
+8|1|59.99|8|7|True
+9|2|99.99|9|8|False
+10|3|89.99|10|9|False
+11|1|79.99|11|10|True
+12|4|49.99|12|11|True
+13|2|119.99|13|12|False
+14|1|99.99|14|13|False
+15|2|199.98|1|15|True

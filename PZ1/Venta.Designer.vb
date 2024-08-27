@@ -22,575 +22,626 @@ Partial Class Venta
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        txtCodigoProducto = New TextBox()
-        rbtnBoleta = New RadioButton()
-        rbtnFactura = New RadioButton()
-        GroupBox1 = New GroupBox()
-        lblNombre = New TextBox()
-        lblMarca = New TextBox()
-        lblTalla = New TextBox()
-        txtSubtotal = New TextBox()
-        lblPrecio = New TextBox()
-        lblStockActual = New TextBox()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        Label5 = New Label()
-        Label6 = New Label()
-        Label7 = New Label()
-        Label8 = New Label()
-        dgvVenta = New DataGridView()
-        Column1 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
-        Código = New DataGridViewTextBoxColumn()
-        Marca = New DataGridViewTextBoxColumn()
-        Column2 = New DataGridViewTextBoxColumn()
-        Column3 = New DataGridViewTextBoxColumn()
-        Column4 = New DataGridViewTextBoxColumn()
-        Column5 = New DataGridViewTextBoxColumn()
-        PanelBoleta = New Panel()
-        lblIdPersona = New Label()
-        lblRuc = New Label()
-        lblApellido = New Label()
-        lblCorreo = New Label()
-        lblRazonSocial = New Label()
-        Button1 = New Button()
-        btnBusBoleta = New Button()
-        lblDireccion = New Label()
-        lblTelefono = New Label()
-        lblNomCliente = New Label()
-        txtDocumento = New TextBox()
-        Label9 = New Label()
-        Label13 = New Label()
-        btnAgregar = New Button()
-        txtCantidad = New NumericUpDown()
-        txtTotal = New TextBox()
-        Label14 = New Label()
-        Label15 = New Label()
-        btnEliminar = New Button()
-        Button4 = New Button()
-        btnBuscar = New Button()
-        cmbTipoPago = New ComboBox()
-        lblIdVendedor = New Label()
-        lblIdProducto = New Label()
-        nueva = New Label()
-        GroupBox1.SuspendLayout()
-        CType(dgvVenta, ComponentModel.ISupportInitialize).BeginInit()
-        PanelBoleta.SuspendLayout()
-        CType(txtCantidad, ComponentModel.ISupportInitialize).BeginInit()
-        SuspendLayout()
-        ' 
-        ' txtCodigoProducto
-        ' 
-        txtCodigoProducto.Location = New Point(63, 173)
-        txtCodigoProducto.Name = "txtCodigoProducto"
-        txtCodigoProducto.Size = New Size(100, 23)
-        txtCodigoProducto.TabIndex = 0
-        ' 
-        ' rbtnBoleta
-        ' 
-        rbtnBoleta.AutoSize = True
-        rbtnBoleta.Location = New Point(21, 36)
-        rbtnBoleta.Name = "rbtnBoleta"
-        rbtnBoleta.Size = New Size(66, 19)
-        rbtnBoleta.TabIndex = 1
-        rbtnBoleta.TabStop = True
-        rbtnBoleta.Text = "BOLETA"
-        rbtnBoleta.UseVisualStyleBackColor = True
-        ' 
-        ' rbtnFactura
-        ' 
-        rbtnFactura.AutoSize = True
-        rbtnFactura.Location = New Point(21, 61)
-        rbtnFactura.Name = "rbtnFactura"
-        rbtnFactura.Size = New Size(75, 19)
-        rbtnFactura.TabIndex = 2
-        rbtnFactura.TabStop = True
-        rbtnFactura.Text = "FACTURA"
-        rbtnFactura.UseVisualStyleBackColor = True
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.Controls.Add(rbtnBoleta)
-        GroupBox1.Controls.Add(rbtnFactura)
-        GroupBox1.Location = New Point(76, 34)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(200, 100)
-        GroupBox1.TabIndex = 3
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "TIPO COMPROBANTE"
-        ' 
-        ' lblNombre
-        ' 
-        lblNombre.Location = New Point(275, 173)
-        lblNombre.Name = "lblNombre"
-        lblNombre.Size = New Size(100, 23)
-        lblNombre.TabIndex = 4
-        ' 
-        ' lblMarca
-        ' 
-        lblMarca.Location = New Point(430, 173)
-        lblMarca.Name = "lblMarca"
-        lblMarca.Size = New Size(100, 23)
-        lblMarca.TabIndex = 5
-        ' 
-        ' lblTalla
-        ' 
-        lblTalla.Location = New Point(604, 173)
-        lblTalla.Name = "lblTalla"
-        lblTalla.Size = New Size(100, 23)
-        lblTalla.TabIndex = 6
-        ' 
-        ' txtSubtotal
-        ' 
-        txtSubtotal.Location = New Point(546, 281)
-        txtSubtotal.Name = "txtSubtotal"
-        txtSubtotal.Size = New Size(100, 23)
-        txtSubtotal.TabIndex = 10
-        ' 
-        ' lblPrecio
-        ' 
-        lblPrecio.Location = New Point(372, 281)
-        lblPrecio.Name = "lblPrecio"
-        lblPrecio.Size = New Size(100, 23)
-        lblPrecio.TabIndex = 9
-        ' 
-        ' lblStockActual
-        ' 
-        lblStockActual.Location = New Point(63, 281)
-        lblStockActual.Name = "lblStockActual"
-        lblStockActual.Size = New Size(100, 23)
-        lblStockActual.TabIndex = 7
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(63, 151)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(46, 15)
-        Label1.TabIndex = 11
-        Label1.Text = "Codigo"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Location = New Point(451, 155)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(40, 15)
-        Label2.TabIndex = 12
-        Label2.Text = "Marca"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Location = New Point(275, 155)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(51, 15)
-        Label3.TabIndex = 13
-        Label3.Text = "Nombre"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(605, 155)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(30, 15)
-        Label4.TabIndex = 14
-        Label4.Text = "Talla"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(92, 263)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(36, 15)
-        Label5.TabIndex = 15
-        Label5.Text = "Stock"
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(217, 263)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(87, 15)
-        Label6.TabIndex = 16
-        Label6.Text = "Cantidad venta"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(385, 263)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(85, 15)
-        Label7.TabIndex = 17
-        Label7.Text = "Precio Unitario"
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(582, 263)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(51, 15)
-        Label8.TabIndex = 18
-        Label8.Text = "Subtotal"
-        ' 
-        ' dgvVenta
-        ' 
-        dgvVenta.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvVenta.Columns.AddRange(New DataGridViewColumn() {Column1, Column6, Código, Marca, Column2, Column3, Column4, Column5})
-        dgvVenta.Location = New Point(37, 402)
-        dgvVenta.Name = "dgvVenta"
-        dgvVenta.RowHeadersWidth = 51
-        dgvVenta.Size = New Size(909, 233)
-        dgvVenta.TabIndex = 19
-        ' 
-        ' Column1
-        ' 
-        Column1.HeaderText = "Id"
-        Column1.MinimumWidth = 6
-        Column1.Name = "Column1"
-        Column1.Width = 125
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "Codigo"
-        Column6.MinimumWidth = 6
-        Column6.Name = "Column6"
-        Column6.Width = 125
-        ' 
-        ' Código
-        ' 
-        Código.HeaderText = "Nombre"
-        Código.MinimumWidth = 6
-        Código.Name = "Código"
-        Código.Width = 125
-        ' 
-        ' Marca
-        ' 
-        Marca.HeaderText = "Marca"
-        Marca.MinimumWidth = 6
-        Marca.Name = "Marca"
-        Marca.Width = 125
-        ' 
-        ' Column2
-        ' 
-        Column2.HeaderText = "Talla"
-        Column2.MinimumWidth = 6
-        Column2.Name = "Column2"
-        Column2.Width = 125
-        ' 
-        ' Column3
-        ' 
-        Column3.HeaderText = "Cantidad"
-        Column3.MinimumWidth = 6
-        Column3.Name = "Column3"
-        Column3.Width = 125
-        ' 
-        ' Column4
-        ' 
-        Column4.HeaderText = "Precio Unitario"
-        Column4.MinimumWidth = 6
-        Column4.Name = "Column4"
-        Column4.Width = 125
-        ' 
-        ' Column5
-        ' 
-        Column5.HeaderText = "Subtotal"
-        Column5.MinimumWidth = 6
-        Column5.Name = "Column5"
-        Column5.Width = 125
-        ' 
-        ' PanelBoleta
-        ' 
-        PanelBoleta.BorderStyle = BorderStyle.Fixed3D
-        PanelBoleta.Controls.Add(lblIdPersona)
-        PanelBoleta.Controls.Add(lblRuc)
-        PanelBoleta.Controls.Add(lblApellido)
-        PanelBoleta.Controls.Add(lblCorreo)
-        PanelBoleta.Controls.Add(lblRazonSocial)
-        PanelBoleta.Controls.Add(Button1)
-        PanelBoleta.Controls.Add(btnBusBoleta)
-        PanelBoleta.Controls.Add(lblDireccion)
-        PanelBoleta.Controls.Add(lblTelefono)
-        PanelBoleta.Controls.Add(lblNomCliente)
-        PanelBoleta.Controls.Add(txtDocumento)
-        PanelBoleta.Controls.Add(Label9)
-        PanelBoleta.Location = New Point(733, 102)
-        PanelBoleta.Name = "PanelBoleta"
-        PanelBoleta.Size = New Size(228, 239)
-        PanelBoleta.TabIndex = 20
-        ' 
-        ' lblIdPersona
-        ' 
-        lblIdPersona.AutoSize = True
-        lblIdPersona.Location = New Point(18, 213)
-        lblIdPersona.Name = "lblIdPersona"
-        lblIdPersona.Size = New Size(47, 15)
-        lblIdPersona.TabIndex = 14
-        lblIdPersona.Text = "Label10"
-        ' 
-        ' lblRuc
-        ' 
-        lblRuc.AutoSize = True
-        lblRuc.Location = New Point(20, 195)
-        lblRuc.Name = "lblRuc"
-        lblRuc.Size = New Size(33, 15)
-        lblRuc.TabIndex = 13
-        lblRuc.Text = "RUC:"
-        ' 
-        ' lblApellido
-        ' 
-        lblApellido.AutoSize = True
-        lblApellido.Location = New Point(16, 106)
-        lblApellido.Name = "lblApellido"
-        lblApellido.Size = New Size(54, 15)
-        lblApellido.TabIndex = 12
-        lblApellido.Text = "Apellido:"
-        ' 
-        ' lblCorreo
-        ' 
-        lblCorreo.AutoSize = True
-        lblCorreo.Location = New Point(12, 178)
-        lblCorreo.Name = "lblCorreo"
-        lblCorreo.Size = New Size(46, 15)
-        lblCorreo.TabIndex = 11
-        lblCorreo.Text = "Correo:"
-        ' 
-        ' lblRazonSocial
-        ' 
-        lblRazonSocial.AutoSize = True
-        lblRazonSocial.Location = New Point(14, 123)
-        lblRazonSocial.Name = "lblRazonSocial"
-        lblRazonSocial.Size = New Size(76, 15)
-        lblRazonSocial.TabIndex = 10
-        lblRazonSocial.Text = "Razón Social:"
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(12, 19)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 9
-        Button1.Text = "Agregar"
-        Button1.UseVisualStyleBackColor = True
-        ' 
-        ' btnBusBoleta
-        ' 
-        btnBusBoleta.Location = New Point(111, 19)
-        btnBusBoleta.Name = "btnBusBoleta"
-        btnBusBoleta.Size = New Size(75, 23)
-        btnBusBoleta.TabIndex = 8
-        btnBusBoleta.Text = "Buscar"
-        btnBusBoleta.UseVisualStyleBackColor = True
-        ' 
-        ' lblDireccion
-        ' 
-        lblDireccion.AutoSize = True
-        lblDireccion.Location = New Point(12, 160)
-        lblDireccion.Name = "lblDireccion"
-        lblDireccion.Size = New Size(60, 15)
-        lblDireccion.TabIndex = 6
-        lblDireccion.Text = "Dirección:"
-        ' 
-        ' lblTelefono
-        ' 
-        lblTelefono.AutoSize = True
-        lblTelefono.Location = New Point(15, 142)
-        lblTelefono.Name = "lblTelefono"
-        lblTelefono.Size = New Size(55, 15)
-        lblTelefono.TabIndex = 4
-        lblTelefono.Text = "Telefono:"
-        ' 
-        ' lblNomCliente
-        ' 
-        lblNomCliente.AutoSize = True
-        lblNomCliente.Location = New Point(16, 86)
-        lblNomCliente.Name = "lblNomCliente"
-        lblNomCliente.Size = New Size(54, 15)
-        lblNomCliente.TabIndex = 2
-        lblNomCliente.Text = "Nombre:"
-        ' 
-        ' txtDocumento
-        ' 
-        txtDocumento.Location = New Point(111, 61)
-        txtDocumento.Name = "txtDocumento"
-        txtDocumento.Size = New Size(100, 23)
-        txtDocumento.TabIndex = 1
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.Location = New Point(15, 63)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(83, 15)
-        Label9.TabIndex = 0
-        Label9.Text = "DOCUMENTO:"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.Location = New Point(733, 84)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(93, 15)
-        Label13.TabIndex = 21
-        Label13.Text = "Datos de Cliente"
-        ' 
-        ' btnAgregar
-        ' 
-        btnAgregar.Location = New Point(349, 361)
-        btnAgregar.Name = "btnAgregar"
-        btnAgregar.Size = New Size(75, 23)
-        btnAgregar.TabIndex = 22
-        btnAgregar.Text = "Agregar"
-        btnAgregar.UseVisualStyleBackColor = True
-        ' 
-        ' txtCantidad
-        ' 
-        txtCantidad.Location = New Point(207, 281)
-        txtCantidad.Name = "txtCantidad"
-        txtCantidad.Size = New Size(120, 23)
-        txtCantidad.TabIndex = 23
-        ' 
-        ' txtTotal
-        ' 
-        txtTotal.Location = New Point(836, 713)
-        txtTotal.Name = "txtTotal"
-        txtTotal.Size = New Size(100, 23)
-        txtTotal.TabIndex = 24
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.Location = New Point(872, 695)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(32, 15)
-        Label14.TabIndex = 25
-        Label14.Text = "Total"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.Location = New Point(399, 695)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(0, 15)
-        Label15.TabIndex = 27
-        ' 
-        ' btnEliminar
-        ' 
-        btnEliminar.Location = New Point(483, 361)
-        btnEliminar.Name = "btnEliminar"
-        btnEliminar.Size = New Size(75, 23)
-        btnEliminar.TabIndex = 30
-        btnEliminar.Text = "Eliminar"
-        btnEliminar.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.Location = New Point(984, 464)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(75, 127)
-        Button4.TabIndex = 31
-        Button4.Text = "Generar Venta"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' btnBuscar
-        ' 
-        btnBuscar.BackgroundImageLayout = ImageLayout.Stretch
-        btnBuscar.Location = New Point(178, 167)
-        btnBuscar.Margin = New Padding(3, 2, 3, 2)
-        btnBuscar.Name = "btnBuscar"
-        btnBuscar.Size = New Size(43, 32)
-        btnBuscar.TabIndex = 32
-        btnBuscar.UseVisualStyleBackColor = True
-        ' 
-        ' cmbTipoPago
-        ' 
-        cmbTipoPago.FormattingEnabled = True
-        cmbTipoPago.Items.AddRange(New Object() {"EFECTIVO", "TRANSFERENCIA"})
-        cmbTipoPago.Location = New Point(63, 693)
-        cmbTipoPago.Margin = New Padding(3, 2, 3, 2)
-        cmbTipoPago.Name = "cmbTipoPago"
-        cmbTipoPago.Size = New Size(224, 23)
-        cmbTipoPago.TabIndex = 33
-        ' 
-        ' lblIdVendedor
-        ' 
-        lblIdVendedor.AutoSize = True
-        lblIdVendedor.Location = New Point(3, 0)
-        lblIdVendedor.Name = "lblIdVendedor"
-        lblIdVendedor.Size = New Size(13, 15)
-        lblIdVendedor.TabIndex = 34
-        lblIdVendedor.Text = "1"
-        ' 
-        ' lblIdProducto
-        ' 
-        lblIdProducto.AutoSize = True
-        lblIdProducto.Location = New Point(317, 87)
-        lblIdProducto.Name = "lblIdProducto"
-        lblIdProducto.Size = New Size(0, 15)
-        lblIdProducto.TabIndex = 35
-        ' 
-        ' nueva
-        ' 
-        nueva.AutoSize = True
-        nueva.Font = New Font("Microsoft Sans Serif", 25.8F)
-        nueva.Location = New Point(317, 16)
-        nueva.Name = "nueva"
-        nueva.Size = New Size(260, 39)
-        nueva.TabIndex = 36
-        nueva.Text = "NUEVA VENTA"
-        ' 
-        ' Venta
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ActiveCaption
-        ClientSize = New Size(1131, 769)
-        Controls.Add(nueva)
-        Controls.Add(lblIdProducto)
-        Controls.Add(lblIdVendedor)
-        Controls.Add(cmbTipoPago)
-        Controls.Add(btnBuscar)
-        Controls.Add(Button4)
-        Controls.Add(btnEliminar)
-        Controls.Add(Label15)
-        Controls.Add(Label14)
-        Controls.Add(txtTotal)
-        Controls.Add(txtCantidad)
-        Controls.Add(btnAgregar)
-        Controls.Add(Label13)
-        Controls.Add(PanelBoleta)
-        Controls.Add(dgvVenta)
-        Controls.Add(Label8)
-        Controls.Add(Label7)
-        Controls.Add(Label6)
-        Controls.Add(Label5)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
-        Controls.Add(Label2)
-        Controls.Add(Label1)
-        Controls.Add(txtSubtotal)
-        Controls.Add(lblPrecio)
-        Controls.Add(lblStockActual)
-        Controls.Add(lblTalla)
-        Controls.Add(lblMarca)
-        Controls.Add(lblNombre)
-        Controls.Add(GroupBox1)
-        Controls.Add(txtCodigoProducto)
-        FormBorderStyle = FormBorderStyle.None
-        Name = "Venta"
-        StartPosition = FormStartPosition.CenterScreen
-        Text = "Venta"
-        WindowState = FormWindowState.Maximized
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
-        CType(dgvVenta, ComponentModel.ISupportInitialize).EndInit()
-        PanelBoleta.ResumeLayout(False)
-        PanelBoleta.PerformLayout()
-        CType(txtCantidad, ComponentModel.ISupportInitialize).EndInit()
-        ResumeLayout(False)
-        PerformLayout()
+        Me.txtCodigoProducto = New System.Windows.Forms.TextBox()
+        Me.rbtnBoleta = New System.Windows.Forms.RadioButton()
+        Me.rbtnFactura = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblNombre = New System.Windows.Forms.TextBox()
+        Me.lblMarca = New System.Windows.Forms.TextBox()
+        Me.lblTalla = New System.Windows.Forms.TextBox()
+        Me.txtSubtotal = New System.Windows.Forms.TextBox()
+        Me.lblPrecio = New System.Windows.Forms.TextBox()
+        Me.lblStockActual = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.dgvVenta = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Código = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Marca = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PanelBoleta = New System.Windows.Forms.Panel()
+        Me.lblIdPersona = New System.Windows.Forms.Label()
+        Me.lblRuc = New System.Windows.Forms.Label()
+        Me.lblApellido = New System.Windows.Forms.Label()
+        Me.lblCorreo = New System.Windows.Forms.Label()
+        Me.lblRazonSocial = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnBusBoleta = New System.Windows.Forms.Button()
+        Me.lblDireccion = New System.Windows.Forms.Label()
+        Me.lblTelefono = New System.Windows.Forms.Label()
+        Me.lblNomCliente = New System.Windows.Forms.Label()
+        Me.txtDocumento = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.txtCantidad = New System.Windows.Forms.NumericUpDown()
+        Me.txtTotal = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.cmbTipoPago = New System.Windows.Forms.ComboBox()
+        Me.lblIdVendedor = New System.Windows.Forms.Label()
+        Me.lblIdProducto = New System.Windows.Forms.Label()
+        Me.nueva = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelBoleta.SuspendLayout()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'txtCodigoProducto
+        '
+        Me.txtCodigoProducto.Location = New System.Drawing.Point(72, 231)
+        Me.txtCodigoProducto.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCodigoProducto.Name = "txtCodigoProducto"
+        Me.txtCodigoProducto.Size = New System.Drawing.Size(114, 27)
+        Me.txtCodigoProducto.TabIndex = 0
+        '
+        'rbtnBoleta
+        '
+        Me.rbtnBoleta.AutoSize = True
+        Me.rbtnBoleta.Location = New System.Drawing.Point(24, 48)
+        Me.rbtnBoleta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rbtnBoleta.Name = "rbtnBoleta"
+        Me.rbtnBoleta.Size = New System.Drawing.Size(82, 24)
+        Me.rbtnBoleta.TabIndex = 1
+        Me.rbtnBoleta.TabStop = True
+        Me.rbtnBoleta.Text = "BOLETA"
+        Me.rbtnBoleta.UseVisualStyleBackColor = True
+        '
+        'rbtnFactura
+        '
+        Me.rbtnFactura.AutoSize = True
+        Me.rbtnFactura.Location = New System.Drawing.Point(24, 81)
+        Me.rbtnFactura.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.rbtnFactura.Name = "rbtnFactura"
+        Me.rbtnFactura.Size = New System.Drawing.Size(92, 24)
+        Me.rbtnFactura.TabIndex = 2
+        Me.rbtnFactura.TabStop = True
+        Me.rbtnFactura.Text = "FACTURA"
+        Me.rbtnFactura.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.rbtnBoleta)
+        Me.GroupBox1.Controls.Add(Me.rbtnFactura)
+        Me.GroupBox1.Location = New System.Drawing.Point(87, 45)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(229, 133)
+        Me.GroupBox1.TabIndex = 3
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "TIPO COMPROBANTE"
+        '
+        'lblNombre
+        '
+        Me.lblNombre.Enabled = False
+        Me.lblNombre.Location = New System.Drawing.Point(314, 231)
+        Me.lblNombre.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(177, 27)
+        Me.lblNombre.TabIndex = 4
+        '
+        'lblMarca
+        '
+        Me.lblMarca.Enabled = False
+        Me.lblMarca.Location = New System.Drawing.Point(515, 231)
+        Me.lblMarca.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.lblMarca.Name = "lblMarca"
+        Me.lblMarca.Size = New System.Drawing.Size(114, 27)
+        Me.lblMarca.TabIndex = 5
+        '
+        'lblTalla
+        '
+        Me.lblTalla.Enabled = False
+        Me.lblTalla.Location = New System.Drawing.Point(690, 231)
+        Me.lblTalla.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.lblTalla.Name = "lblTalla"
+        Me.lblTalla.Size = New System.Drawing.Size(114, 27)
+        Me.lblTalla.TabIndex = 6
+        '
+        'txtSubtotal
+        '
+        Me.txtSubtotal.Enabled = False
+        Me.txtSubtotal.Location = New System.Drawing.Point(665, 374)
+        Me.txtSubtotal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.Size = New System.Drawing.Size(114, 27)
+        Me.txtSubtotal.TabIndex = 10
+        '
+        'lblPrecio
+        '
+        Me.lblPrecio.Enabled = False
+        Me.lblPrecio.Location = New System.Drawing.Point(440, 375)
+        Me.lblPrecio.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.lblPrecio.Name = "lblPrecio"
+        Me.lblPrecio.Size = New System.Drawing.Size(114, 27)
+        Me.lblPrecio.TabIndex = 9
+        '
+        'lblStockActual
+        '
+        Me.lblStockActual.Enabled = False
+        Me.lblStockActual.Location = New System.Drawing.Point(72, 375)
+        Me.lblStockActual.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.lblStockActual.Name = "lblStockActual"
+        Me.lblStockActual.Size = New System.Drawing.Size(114, 27)
+        Me.lblStockActual.TabIndex = 7
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(72, 201)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 20)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "Codigo"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(515, 207)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(50, 20)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Marca"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(314, 207)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(64, 20)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Nombre"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(691, 207)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(39, 20)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Talla"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(105, 351)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 20)
+        Me.Label5.TabIndex = 15
+        Me.Label5.Text = "Stock"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(248, 339)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(109, 20)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "Cantidad venta"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(440, 351)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(107, 20)
+        Me.Label7.TabIndex = 17
+        Me.Label7.Text = "Precio Unitario"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(665, 351)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 20)
+        Me.Label8.TabIndex = 18
+        Me.Label8.Text = "Subtotal"
+        '
+        'dgvVenta
+        '
+        Me.dgvVenta.AllowUserToAddRows = False
+        Me.dgvVenta.AllowUserToDeleteRows = False
+        Me.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvVenta.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column6, Me.Código, Me.Marca, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        Me.dgvVenta.Location = New System.Drawing.Point(42, 536)
+        Me.dgvVenta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.dgvVenta.Name = "dgvVenta"
+        Me.dgvVenta.ReadOnly = True
+        Me.dgvVenta.RowHeadersWidth = 51
+        Me.dgvVenta.Size = New System.Drawing.Size(1039, 311)
+        Me.dgvVenta.TabIndex = 19
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Id"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 125
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Codigo"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Width = 125
+        '
+        'Código
+        '
+        Me.Código.HeaderText = "Nombre"
+        Me.Código.MinimumWidth = 6
+        Me.Código.Name = "Código"
+        Me.Código.ReadOnly = True
+        Me.Código.Width = 125
+        '
+        'Marca
+        '
+        Me.Marca.HeaderText = "Marca"
+        Me.Marca.MinimumWidth = 6
+        Me.Marca.Name = "Marca"
+        Me.Marca.ReadOnly = True
+        Me.Marca.Width = 125
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Talla"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 125
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Cantidad"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 125
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Precio Unitario"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 125
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Subtotal"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Width = 125
+        '
+        'PanelBoleta
+        '
+        Me.PanelBoleta.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PanelBoleta.Controls.Add(Me.lblIdPersona)
+        Me.PanelBoleta.Controls.Add(Me.lblRuc)
+        Me.PanelBoleta.Controls.Add(Me.lblApellido)
+        Me.PanelBoleta.Controls.Add(Me.lblCorreo)
+        Me.PanelBoleta.Controls.Add(Me.lblRazonSocial)
+        Me.PanelBoleta.Controls.Add(Me.Button1)
+        Me.PanelBoleta.Controls.Add(Me.btnBusBoleta)
+        Me.PanelBoleta.Controls.Add(Me.lblDireccion)
+        Me.PanelBoleta.Controls.Add(Me.lblTelefono)
+        Me.PanelBoleta.Controls.Add(Me.lblNomCliente)
+        Me.PanelBoleta.Controls.Add(Me.txtDocumento)
+        Me.PanelBoleta.Controls.Add(Me.Label9)
+        Me.PanelBoleta.Location = New System.Drawing.Point(838, 136)
+        Me.PanelBoleta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PanelBoleta.Name = "PanelBoleta"
+        Me.PanelBoleta.Size = New System.Drawing.Size(260, 317)
+        Me.PanelBoleta.TabIndex = 20
+        '
+        'lblIdPersona
+        '
+        Me.lblIdPersona.AutoSize = True
+        Me.lblIdPersona.Location = New System.Drawing.Point(21, 284)
+        Me.lblIdPersona.Name = "lblIdPersona"
+        Me.lblIdPersona.Size = New System.Drawing.Size(0, 20)
+        Me.lblIdPersona.TabIndex = 14
+        '
+        'lblRuc
+        '
+        Me.lblRuc.AutoSize = True
+        Me.lblRuc.Location = New System.Drawing.Point(23, 260)
+        Me.lblRuc.Name = "lblRuc"
+        Me.lblRuc.Size = New System.Drawing.Size(40, 20)
+        Me.lblRuc.TabIndex = 13
+        Me.lblRuc.Text = "RUC:"
+        '
+        'lblApellido
+        '
+        Me.lblApellido.AutoSize = True
+        Me.lblApellido.Location = New System.Drawing.Point(18, 141)
+        Me.lblApellido.Name = "lblApellido"
+        Me.lblApellido.Size = New System.Drawing.Size(69, 20)
+        Me.lblApellido.TabIndex = 12
+        Me.lblApellido.Text = "Apellido:"
+        '
+        'lblCorreo
+        '
+        Me.lblCorreo.AutoSize = True
+        Me.lblCorreo.Location = New System.Drawing.Point(14, 237)
+        Me.lblCorreo.Name = "lblCorreo"
+        Me.lblCorreo.Size = New System.Drawing.Size(57, 20)
+        Me.lblCorreo.TabIndex = 11
+        Me.lblCorreo.Text = "Correo:"
+        '
+        'lblRazonSocial
+        '
+        Me.lblRazonSocial.AutoSize = True
+        Me.lblRazonSocial.Location = New System.Drawing.Point(16, 164)
+        Me.lblRazonSocial.Name = "lblRazonSocial"
+        Me.lblRazonSocial.Size = New System.Drawing.Size(97, 20)
+        Me.lblRazonSocial.TabIndex = 10
+        Me.lblRazonSocial.Text = "Razón Social:"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(14, 25)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(86, 31)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Agregar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnBusBoleta
+        '
+        Me.btnBusBoleta.Location = New System.Drawing.Point(127, 25)
+        Me.btnBusBoleta.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnBusBoleta.Name = "btnBusBoleta"
+        Me.btnBusBoleta.Size = New System.Drawing.Size(86, 31)
+        Me.btnBusBoleta.TabIndex = 8
+        Me.btnBusBoleta.Text = "Buscar"
+        Me.btnBusBoleta.UseVisualStyleBackColor = True
+        '
+        'lblDireccion
+        '
+        Me.lblDireccion.AutoSize = True
+        Me.lblDireccion.Location = New System.Drawing.Point(14, 213)
+        Me.lblDireccion.Name = "lblDireccion"
+        Me.lblDireccion.Size = New System.Drawing.Size(75, 20)
+        Me.lblDireccion.TabIndex = 6
+        Me.lblDireccion.Text = "Dirección:"
+        '
+        'lblTelefono
+        '
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Location = New System.Drawing.Point(17, 189)
+        Me.lblTelefono.Name = "lblTelefono"
+        Me.lblTelefono.Size = New System.Drawing.Size(70, 20)
+        Me.lblTelefono.TabIndex = 4
+        Me.lblTelefono.Text = "Telefono:"
+        '
+        'lblNomCliente
+        '
+        Me.lblNomCliente.AutoSize = True
+        Me.lblNomCliente.Location = New System.Drawing.Point(18, 115)
+        Me.lblNomCliente.Name = "lblNomCliente"
+        Me.lblNomCliente.Size = New System.Drawing.Size(67, 20)
+        Me.lblNomCliente.TabIndex = 2
+        Me.lblNomCliente.Text = "Nombre:"
+        '
+        'txtDocumento
+        '
+        Me.txtDocumento.Location = New System.Drawing.Point(127, 81)
+        Me.txtDocumento.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtDocumento.Name = "txtDocumento"
+        Me.txtDocumento.Size = New System.Drawing.Size(114, 27)
+        Me.txtDocumento.TabIndex = 1
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(17, 84)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(103, 20)
+        Me.Label9.TabIndex = 0
+        Me.Label9.Text = "DOCUMENTO:"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(838, 112)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(119, 20)
+        Me.Label13.TabIndex = 21
+        Me.Label13.Text = "Datos de Cliente"
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Location = New System.Drawing.Point(399, 481)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(86, 31)
+        Me.btnAgregar.TabIndex = 22
+        Me.btnAgregar.Text = "Agregar"
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtCantidad.Location = New System.Drawing.Point(248, 363)
+        Me.txtCantidad.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(109, 47)
+        Me.txtCantidad.TabIndex = 23
+        '
+        'txtTotal
+        '
+        Me.txtTotal.Enabled = False
+        Me.txtTotal.Location = New System.Drawing.Point(955, 951)
+        Me.txtTotal.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.Size = New System.Drawing.Size(114, 27)
+        Me.txtTotal.TabIndex = 24
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(997, 927)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(42, 20)
+        Me.Label14.TabIndex = 25
+        Me.Label14.Text = "Total"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(456, 927)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(0, 20)
+        Me.Label15.TabIndex = 27
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(552, 481)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(86, 31)
+        Me.btnEliminar.TabIndex = 30
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(1125, 619)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(86, 169)
+        Me.Button4.TabIndex = 31
+        Me.Button4.Text = "Generar Venta"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.BackgroundImage = Global.PZ1.My.Resources.Resources.Venta_
+        Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBuscar.Location = New System.Drawing.Point(203, 219)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(76, 47)
+        Me.btnBuscar.TabIndex = 32
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'cmbTipoPago
+        '
+        Me.cmbTipoPago.FormattingEnabled = True
+        Me.cmbTipoPago.Items.AddRange(New Object() {"EFECTIVO", "TRANSFERENCIA"})
+        Me.cmbTipoPago.Location = New System.Drawing.Point(72, 924)
+        Me.cmbTipoPago.Name = "cmbTipoPago"
+        Me.cmbTipoPago.Size = New System.Drawing.Size(255, 28)
+        Me.cmbTipoPago.TabIndex = 33
+        '
+        'lblIdVendedor
+        '
+        Me.lblIdVendedor.AutoSize = True
+        Me.lblIdVendedor.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.lblIdVendedor.Location = New System.Drawing.Point(3, 0)
+        Me.lblIdVendedor.Name = "lblIdVendedor"
+        Me.lblIdVendedor.Size = New System.Drawing.Size(17, 20)
+        Me.lblIdVendedor.TabIndex = 34
+        Me.lblIdVendedor.Text = "1"
+        '
+        'lblIdProducto
+        '
+        Me.lblIdProducto.AutoSize = True
+        Me.lblIdProducto.Location = New System.Drawing.Point(362, 116)
+        Me.lblIdProducto.Name = "lblIdProducto"
+        Me.lblIdProducto.Size = New System.Drawing.Size(0, 20)
+        Me.lblIdProducto.TabIndex = 35
+        '
+        'nueva
+        '
+        Me.nueva.AutoSize = True
+        Me.nueva.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.nueva.Location = New System.Drawing.Point(362, 21)
+        Me.nueva.Name = "nueva"
+        Me.nueva.Size = New System.Drawing.Size(326, 51)
+        Me.nueva.TabIndex = 36
+        Me.nueva.Text = "NUEVA VENTA"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(1201, 16)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(63, 34)
+        Me.Button2.TabIndex = 37
+        Me.Button2.Text = "X"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Venta
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(1293, 1025)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.nueva)
+        Me.Controls.Add(Me.lblIdProducto)
+        Me.Controls.Add(Me.lblIdVendedor)
+        Me.Controls.Add(Me.cmbTipoPago)
+        Me.Controls.Add(Me.btnBuscar)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.btnEliminar)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.txtTotal)
+        Me.Controls.Add(Me.txtCantidad)
+        Me.Controls.Add(Me.btnAgregar)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.PanelBoleta)
+        Me.Controls.Add(Me.dgvVenta)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtSubtotal)
+        Me.Controls.Add(Me.lblPrecio)
+        Me.Controls.Add(Me.lblStockActual)
+        Me.Controls.Add(Me.lblTalla)
+        Me.Controls.Add(Me.lblMarca)
+        Me.Controls.Add(Me.lblNombre)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.txtCodigoProducto)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Name = "Venta"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Venta"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.dgvVenta, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelBoleta.ResumeLayout(False)
+        Me.PanelBoleta.PerformLayout()
+        CType(Me.txtCantidad, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -647,4 +698,5 @@ Partial Class Venta
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents lblIdProducto As Label
     Friend WithEvents nueva As Label
+    Friend WithEvents Button2 As Button
 End Class

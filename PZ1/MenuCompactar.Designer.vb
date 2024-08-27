@@ -30,7 +30,11 @@ Partial Class MenuCompactar
         ToolTip1 = New ToolTip(components)
         btnMenu = New Button()
         ToolTip2 = New ToolTip(components)
+        GroupBox2 = New GroupBox()
+        Button2 = New Button()
+        Button1 = New Button()
         GroupBox1.SuspendLayout()
+        GroupBox2.SuspendLayout()
         SuspendLayout()
         ' 
         ' btnCopia
@@ -66,28 +70,63 @@ Partial Class MenuCompactar
         GroupBox1.BackColor = Color.FromArgb(CByte(255), CByte(192), CByte(255))
         GroupBox1.Controls.Add(btnCopia)
         GroupBox1.Controls.Add(btnSitu)
-        GroupBox1.Location = New Point(12, 61)
+        GroupBox1.Location = New Point(31, 61)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(289, 232)
         GroupBox1.TabIndex = 3
         GroupBox1.TabStop = False
-        GroupBox1.Text = "Compactación"
+        GroupBox1.Text = "Persona"
         ' 
         ' btnMenu
         ' 
-        btnMenu.Location = New Point(109, 316)
+        btnMenu.Location = New Point(292, 348)
         btnMenu.Name = "btnMenu"
         btnMenu.Size = New Size(59, 39)
         btnMenu.TabIndex = 2
         btnMenu.Text = "Menu"
         btnMenu.UseVisualStyleBackColor = True
         ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
+        GroupBox2.Controls.Add(Button2)
+        GroupBox2.Controls.Add(Button1)
+        GroupBox2.Location = New Point(326, 64)
+        GroupBox2.Margin = New Padding(3, 2, 3, 2)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Padding = New Padding(3, 2, 3, 2)
+        GroupBox2.Size = New Size(261, 229)
+        GroupBox2.TabIndex = 4
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "Venta"
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(49, 127)
+        Button2.Margin = New Padding(3, 2, 3, 2)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(170, 66)
+        Button2.TabIndex = 1
+        Button2.Text = "In Situ"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(49, 48)
+        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(170, 66)
+        Button1.TabIndex = 0
+        Button1.Text = "Por copia"
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' MenuCompactar
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
-        ClientSize = New Size(313, 376)
+        ClientSize = New Size(629, 423)
+        Controls.Add(GroupBox2)
         Controls.Add(btnMenu)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
@@ -95,8 +134,10 @@ Partial Class MenuCompactar
         Name = "MenuCompactar"
         Text = "MenuCompactar"
         GroupBox1.ResumeLayout(False)
+        GroupBox2.ResumeLayout(False)
         ResumeLayout(False)
         PerformLayout()
+
     End Sub
 
     Friend WithEvents btnCopia As Button
@@ -106,4 +147,7 @@ Partial Class MenuCompactar
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents btnMenu As Button
     Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

@@ -1,0 +1,61 @@
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.vbproj.AssemblyReference.cache
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\bin\Debug\net6.0-windows\PZ1.exe
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\bin\Debug\net6.0-windows\PZ1.deps.json
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\bin\Debug\net6.0-windows\PZ1.runtimeconfig.json
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\bin\Debug\net6.0-windows\PZ1.dll
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\bin\Debug\net6.0-windows\PZ1.pdb
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.AddCliente.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.AddProveedor.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Cliente.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Compra.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.EditCliente.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.EditProveedor.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Home.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Inventario.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Login.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.MenuCompactar.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Resources.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Proveedor.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Reportes.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.Venta.resources
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.vbproj.GenerateResource.cache
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.AssemblyInfoInputs.cache
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.AssemblyInfo.vb
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.vbproj.CoreCompileInputs.cache
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.dll
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\refint\PZ1.dll
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.pdb
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\PZ1.genruntimeconfig.cache
+C:\Users\PAUL\Documents\2024 - I\zapateria\PZ1\obj\Debug\net6.0-windows\ref\PZ1.dll
+C:\Users\IK\Desktop\PZ1\bin\Debug\net6.0-windows\PZ1.exe
+C:\Users\IK\Desktop\PZ1\bin\Debug\net6.0-windows\PZ1.deps.json
+C:\Users\IK\Desktop\PZ1\bin\Debug\net6.0-windows\PZ1.runtimeconfig.json
+C:\Users\IK\Desktop\PZ1\bin\Debug\net6.0-windows\PZ1.dll
+C:\Users\IK\Desktop\PZ1\bin\Debug\net6.0-windows\PZ1.pdb
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.AddCliente.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.AddProveedor.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Cliente.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Compra.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.EditCliente.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.EditProveedor.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Home.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Inventario.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Login.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.MenuCompactar.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Resources.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Proveedor.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Reportes.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Venta.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.vbproj.GenerateResource.cache
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.AssemblyInfoInputs.cache
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.AssemblyInfo.vb
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.vbproj.CoreCompileInputs.cache
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.dll
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\refint\PZ1.dll
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.pdb
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.genruntimeconfig.cache
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\ref\PZ1.dll
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.Productos.resources
+C:\Users\IK\Desktop\PZ1\obj\Debug\net6.0-windows\PZ1.AddProducto.resources

@@ -1,0 +1,3 @@
+IdCategoria|Nombre
+1|Calzado Deportivo
+2|Calzado Casual
