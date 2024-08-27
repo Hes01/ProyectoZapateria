@@ -2,6 +2,7 @@
     Private Sub MenuCompactar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ToolTip1.SetToolTip(btnCopia, "Con esta opción se crea un archivo temporal donde se copian los registros activos, se elimina el original y se renombra el temporal en reemplazo del original.")
         ToolTip2.SetToolTip(btnSitu, "Con esta opción se sobreescribe el archivo original con los registros activos.")
+        ToolTip3.SetToolTip(btnSitu, "Con esta opción se sobreescribe el archivo original con los registros activos.")
     End Sub
 
     Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
@@ -225,5 +226,23 @@
         DetalleComprobante.CompactarDetallesInSitu()
         Comprobante.CompactarComprobantesInSitu()
         Kardex.CompactarKardexInSitu()
+    End Sub
+
+    Private Sub btn_compra_copia_Click(sender As Object, e As EventArgs) Handles btn_compra_copia.Click
+        Kardex.CompactarKardexPorCopia()
+        Producto.CompactarProductoPorCopia()
+    End Sub
+
+    Private Sub btn_compra_InSitu_Click(sender As Object, e As EventArgs) Handles btn_compra_InSitu.Click
+        Kardex.CompactarKardexInSitu()
+        Producto.CompactarProductoInSitu()
+    End Sub
+
+    Private Sub btn_producto_copia_Click(sender As Object, e As EventArgs) Handles btn_producto_copia.Click
+        Producto.CompactarProductoPorCopia()
+    End Sub
+
+    Private Sub btn_producto_inSitu_Click(sender As Object, e As EventArgs) Handles btn_producto_inSitu.Click
+        Producto.CompactarProductoInSitu()
     End Sub
 End Class

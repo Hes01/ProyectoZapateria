@@ -141,5 +141,87 @@
         End If
     End Sub
 
+    Public Shared Sub CompactarProductoPorCopia()
+        Dim rutaArchivoProducto As String = "Datos\producto.txt"
+        Dim rutaArchivoTemporal As String = "Datos\producto_temp.txt"
+        Dim lineasFiltradas As New List(Of String)()
+
+        Try
+            ' Leer todas las líneas del archivo
+            Dim lines() As String = System.IO.File.ReadAllLines(rutaArchivoProducto)
+
+            ' Asegurarse de que hay al menos una línea (la cabecera)
+            If lines.Length > 0 Then
+                ' Agregar la cabecera a la lista de líneas filtradas
+                lineasFiltradas.Add(lines(0))
+
+                ' Iterar desde la segunda línea para omitir la cabecera
+                For i As Integer = 1 To lines.Length - 1
+                    Dim line As String = lines(i)
+                    Dim fields() As String = line.Split("|"c)
+                    If fields.Length >= 8 Then
+                        Dim estado As Boolean
+
+                        ' Validar y convertir el campo estado
+                        If Boolean.TryParse(fields(8).Trim(), estado) AndAlso estado Then
+                            ' Agregar solo los registros con estado activo a la lista filtrada
+                            lineasFiltradas.Add(line)
+                        End If
+                    End If
+                Next
+
+                ' Guardar los detalles filtrados en un archivo temporal
+                System.IO.File.WriteAllLines(rutaArchivoTemporal, lineasFiltradas)
+
+                ' Reemplazar el archivo original con el archivo temporal
+                System.IO.File.Delete(rutaArchivoProducto)
+                System.IO.File.Move(rutaArchivoTemporal, rutaArchivoProducto)
+
+                MessageBox.Show("Compactación por copia de archivo Producto completada con éxito.")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show($"Error al compactar por copia el archivo Producto. Error: {ex.Message}")
+        End Try
+    End Sub
+
+    Public Shared Sub CompactarProductoInSitu()
+        Dim rutaArchivoProducto As String = "Datos\producto.txt"
+        Dim lineasFiltradas As New List(Of String)()
+
+        Try
+            ' Leer todas las líneas del archivo
+            Dim lines() As String = System.IO.File.ReadAllLines(rutaArchivoProducto)
+
+            ' Asegurarse de que hay al menos una línea (la cabecera)
+            If lines.Length > 0 Then
+                ' Agregar la cabecera a la lista de líneas filtradas
+                lineasFiltradas.Add(lines(0))
+
+                ' Iterar desde la segunda línea para omitir la cabecera
+                For i As Integer = 1 To lines.Length - 1
+                    Dim line As String = lines(i)
+                    Dim fields() As String = line.Split("|"c)
+                    If fields.Length >= 8 Then
+                        Dim estado As Boolean
+
+                        ' Validar y convertir el campo estado
+                        If Boolean.TryParse(fields(8).Trim(), estado) AndAlso estado Then
+                            ' Agregar solo los registros con estado activo a la lista filtrada
+                            lineasFiltradas.Add(line)
+                        End If
+                    End If
+                Next
+
+                ' Sobrescribir el archivo original con las líneas filtradas
+                System.IO.File.WriteAllLines(rutaArchivoProducto, lineasFiltradas)
+                MessageBox.Show("Compactación in situ del archivo producto completada con éxito.")
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show($"Error al compactar in situ el archivo producto. Error: {ex.Message}")
+        End Try
+    End Sub
+
 End Class
 
