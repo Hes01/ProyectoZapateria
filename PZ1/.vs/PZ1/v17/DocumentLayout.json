@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\ZapateriaEnd\\PZ1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|c:\\zapateriaend\\pz1\\menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|solutionrelative:menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|c:\\zapateriaend\\pz1\\menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|solutionrelative:menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|solutionrelative:home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|c:\\zapateriaend\\pz1\\menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|solutionrelative:menucompactar.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|c:\\zapateriaend\\pz1\\marca.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{328E7AF5-B925-4F72-AD98-9914D0B8BA26}|PZ1.vbproj|solutionrelative:marca.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 86,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Home.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\Home.vb",
               "RelativeDocumentMoniker": "Home.vb",
@@ -86,20 +86,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "MenuCompactar.vb",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\MenuCompactar.vb",
               "RelativeDocumentMoniker": "MenuCompactar.vb",
               "ToolTip": "C:\\ZapateriaEnd\\PZ1\\MenuCompactar.vb",
               "RelativeToolTip": "MenuCompactar.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAgAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwFgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-08-27T15:30:24.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MenuCompactar.vb [Dise\u00F1o]",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\MenuCompactar.vb",
               "RelativeDocumentMoniker": "MenuCompactar.vb",
@@ -123,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "persona_natural.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\persona_natural.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\persona_natural.txt",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "persona.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\persona.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\persona.txt",
@@ -147,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "persona_juridica.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\persona_juridica.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\persona_juridica.txt",
@@ -183,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "producto.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\producto.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\producto.txt",
@@ -195,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "kardex.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\kardex.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\kardex.txt",
@@ -207,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "comprobantes.txt",
               "DocumentMoniker": "C:\\ZapateriaEnd\\PZ1\\bin\\Debug\\net6.0-windows\\Datos\\comprobantes.txt",
               "RelativeDocumentMoniker": "bin\\Debug\\net6.0-windows\\Datos\\comprobantes.txt",
